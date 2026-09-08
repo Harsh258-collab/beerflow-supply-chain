@@ -1,0 +1,601 @@
+Cold_Chain_ID,Date,Region,Warehouse,SKU,Supply_Chain_Stage,Target_Temp_C,Avg_Temp_C,Min_Temp_C,Max_Temp_C,Temperature_Breach,Breach_Duration_Min,Humidity_Pct,Transport_Hours,Product_Status,Cost_Impact_INR
+CC-0001,2024-11-20,West India,WH-HYD-01,Stout_650ml,Retail Outlet,6,6.6,5.9,7.1,No,0,55.1,3.2,Compliant,0
+CC-0002,2024-10-25,South India,WH-KOL-01,Wheat_330ml,Brewery,2,0.8,-1.3,2.5,Yes,167,79.7,13.2,Disposed,23207
+CC-0003,2024-07-19,South India,WH-KOL-01,Stout_650ml,Retail Outlet,4,3.0,0.8,6.3,Yes,36,79.4,9.4,Compliant,2048
+CC-0004,2024-01-31,East India,WH-KOL-01,Wheat_330ml,Primary Warehouse,2,3.4,1.9,5.4,No,0,82.1,7.7,Compliant,0
+CC-0005,2024-01-24,North India,WH-BLR-01,Lager_500ml,Distributor,2,0.9,-0.8,4.3,Yes,46,55.2,10.1,Compliant,8550
+CC-0006,2024-04-18,East India,WH-KOL-01,Wheat_330ml,Primary Warehouse,6,5.3,4.0,6.1,No,0,75.9,4.9,Compliant,0
+CC-0007,2024-07-26,North India,WH-HYD-01,Light_Beer_330ml,Brewery,4,4.8,3.8,7.4,No,0,66.3,11.1,Compliant,0
+CC-0008,2024-06-25,South India,WH-DEL-01,Lager_500ml,Brewery,8,12.5,11.0,13.2,Yes,67,74.6,2.0,Quarantined,12210
+CC-0009,2024-09-14,Central India,WH-DEL-01,Strong_Beer_500ml,Primary Warehouse,8,7.0,4.6,8.1,Yes,98,82.5,2.5,Disposed,19357
+CC-0010,2024-11-28,East India,WH-HYD-01,Strong_Beer_500ml,Brewery,2,2.6,0.8,4.1,No,0,83.8,16.8,Compliant,0
+CC-0011,2024-07-18,East India,WH-DEL-01,Strong_Beer_500ml,Primary Warehouse,8,8.3,6.3,11.0,No,0,65.0,15.3,Compliant,0
+CC-0012,2024-05-08,North India,WH-KOL-01,Strong_Beer_500ml,Retail Outlet,8,10.2,8.6,11.6,No,0,78.8,12.4,Compliant,0
+CC-0013,2024-06-14,East India,WH-KOL-01,Stout_650ml,Retail Outlet,4,3.6,3.0,5.7,No,0,66.9,2.4,Compliant,0
+CC-0014,2024-09-03,Central India,WH-MUM-01,Strong_Beer_500ml,Distributor,8,6.9,4.6,9.5,Yes,102,64.0,12.6,Compliant,17361
+CC-0015,2024-10-05,Central India,WH-HYD-01,Strong_Beer_500ml,Brewery,8,8.3,7.7,11.2,No,0,63.2,3.8,Compliant,0
+CC-0016,2024-05-06,Central India,WH-HYD-01,Stout_650ml,Brewery,2,4.1,2.2,7.0,Yes,124,70.8,5.1,Disposed,23807
+CC-0017,2024-06-02,West India,WH-BLR-01,Stout_650ml,Brewery,2,2.4,0.1,4.1,No,0,72.6,11.7,Compliant,0
+CC-0018,2024-09-27,West India,WH-BLR-01,Lager_500ml,Distributor,2,3.4,2.2,5.0,No,0,67.3,7.0,Compliant,0
+CC-0019,2024-12-24,East India,WH-HYD-01,Wheat_330ml,Retail Outlet,4,3.5,1.7,6.8,Yes,104,82.1,16.5,Compliant,19619
+CC-0020,2024-11-21,South India,WH-BLR-01,Stout_650ml,Regional Hub,6,7.6,6.2,10.8,Yes,161,72.1,17.6,Disposed,14987
+CC-0021,2024-12-22,West India,WH-BLR-01,Stout_650ml,Primary Warehouse,6,7.4,5.3,10.2,Yes,163,59.4,5.1,Compliant,12576
+CC-0022,2024-09-08,North India,WH-BLR-01,Light_Beer_330ml,Brewery,4,5.1,3.1,7.6,No,0,64.2,13.8,Compliant,0
+CC-0023,2024-08-27,West India,WH-KOL-01,Stout_650ml,Distributor,8,9.0,8.2,12.3,Yes,116,68.1,5.2,Disposed,15108
+CC-0024,2024-11-08,South India,WH-BLR-01,Stout_650ml,Regional Hub,8,6.5,6.0,9.8,No,0,60.7,13.2,Compliant,0
+CC-0025,2024-12-08,West India,WH-BLR-01,Lager_500ml,Regional Hub,2,4.2,2.1,7.1,Yes,86,68.3,14.9,Quarantined,15186
+CC-0026,2024-11-14,South India,WH-HYD-01,Strong_Beer_500ml,Primary Warehouse,2,4.0,1.8,6.8,Yes,103,65.5,14.6,Quarantined,16261
+CC-0027,2024-04-10,West India,WH-HYD-01,Wheat_330ml,Retail Outlet,2,0.6,-1.7,3.1,Yes,34,82.4,7.5,Quarantined,2635
+CC-0028,2024-10-07,West India,WH-DEL-01,Stout_650ml,Retail Outlet,4,3.0,1.8,6.2,Yes,17,73.0,14.9,Compliant,2236
+CC-0029,2024-02-28,West India,WH-HYD-01,Strong_Beer_500ml,Primary Warehouse,4,1.8,-0.5,4.2,Yes,147,78.3,8.5,Quarantined,13169
+CC-0030,2024-06-10,East India,WH-HYD-01,Stout_650ml,Regional Hub,2,4.4,3.1,4.9,No,0,57.8,12.1,Compliant,0
+CC-0031,2024-02-22,South India,WH-DEL-01,Stout_650ml,Primary Warehouse,2,1.7,-0.8,4.1,Yes,96,75.2,15.3,Quarantined,15379
+CC-0032,2024-12-27,North India,WH-BLR-01,Wheat_330ml,Primary Warehouse,6,7.3,5.0,7.9,No,0,69.4,11.1,Compliant,0
+CC-0033,2024-08-15,South India,WH-BLR-01,IPA_330ml,Retail Outlet,2,1.0,-0.6,4.1,Yes,30,70.0,9.9,Compliant,4651
+CC-0034,2024-06-19,North India,WH-BLR-01,Light_Beer_330ml,Brewery,6,5.9,5.1,8.7,No,0,64.9,5.6,Compliant,0
+CC-0035,2024-09-24,North India,WH-MUM-01,Premium_Lager_330ml,Distributor,8,8.9,7.1,12.1,Yes,110,71.2,5.4,Compliant,9762
+CC-0036,2024-03-23,South India,WH-HYD-01,IPA_330ml,Brewery,2,-0.3,-1.7,2.0,Yes,62,60.0,5.2,Disposed,4103
+CC-0037,2024-11-22,South India,WH-HYD-01,Premium_Lager_330ml,Brewery,4,3.0,2.1,4.5,No,0,71.4,7.0,Compliant,0
+CC-0038,2024-02-11,East India,WH-MUM-01,Light_Beer_330ml,Regional Hub,6,6.4,5.1,9.2,No,0,77.8,12.6,Compliant,0
+CC-0039,2024-11-03,East India,WH-MUM-01,Stout_650ml,Retail Outlet,2,2.1,1.1,4.3,No,0,78.1,11.5,Compliant,0
+CC-0040,2024-09-08,Central India,WH-BLR-01,Wheat_330ml,Retail Outlet,4,5.5,4.3,7.5,No,0,72.6,17.3,Compliant,0
+CC-0041,2024-08-14,North India,WH-BLR-01,Lager_500ml,Brewery,8,7.6,6.5,8.8,No,0,74.5,11.9,Compliant,0
+CC-0042,2024-09-17,West India,WH-BLR-01,Strong_Beer_500ml,Brewery,2,1.7,-0.5,4.9,Yes,170,55.6,1.1,Quarantined,28823
+CC-0043,2024-02-22,Central India,WH-DEL-01,Premium_Lager_330ml,Distributor,8,11.0,10.4,13.6,Yes,19,78.0,3.1,Compliant,2777
+CC-0044,2024-11-22,Central India,WH-DEL-01,Premium_Lager_330ml,Brewery,2,1.9,-0.2,2.7,Yes,110,72.2,9.6,Compliant,17602
+CC-0045,2024-02-19,Central India,WH-KOL-01,Stout_650ml,Primary Warehouse,8,12.1,10.6,13.0,Yes,134,58.7,14.8,Disposed,18859
+CC-0046,2024-02-26,East India,WH-HYD-01,Stout_650ml,Regional Hub,8,8.6,7.5,10.0,No,0,80.5,2.1,Compliant,0
+CC-0047,2024-02-16,Central India,WH-DEL-01,IPA_330ml,Primary Warehouse,6,3.9,1.8,4.7,Yes,38,69.5,12.4,Disposed,7506
+CC-0048,2024-11-20,South India,WH-BLR-01,IPA_330ml,Distributor,2,2.7,2.0,4.4,No,0,66.4,2.5,Compliant,0
+CC-0049,2024-10-13,Central India,WH-DEL-01,Light_Beer_330ml,Brewery,6,9.5,7.2,11.5,Yes,124,55.8,13.8,Compliant,11663
+CC-0050,2024-01-17,East India,WH-KOL-01,Premium_Lager_330ml,Distributor,2,2.9,1.0,5.4,No,0,82.6,2.0,Compliant,0
+CC-0051,2024-07-01,East India,WH-DEL-01,Stout_650ml,Retail Outlet,4,7.0,5.6,7.9,No,0,82.9,1.1,Compliant,0
+CC-0052,2024-10-24,East India,WH-MUM-01,Light_Beer_330ml,Retail Outlet,2,1.3,0.2,2.7,No,0,63.3,14.8,Compliant,0
+CC-0053,2024-03-09,North India,WH-HYD-01,Light_Beer_330ml,Regional Hub,2,1.5,0.8,3.6,No,0,63.3,17.3,Compliant,0
+CC-0054,2024-07-26,East India,WH-KOL-01,Light_Beer_330ml,Distributor,8,9.6,8.4,12.2,Yes,148,83.2,8.9,Compliant,20911
+CC-0055,2024-05-23,East India,WH-BLR-01,Light_Beer_330ml,Retail Outlet,8,10.8,8.8,12.4,Yes,91,80.5,14.5,Quarantined,9999
+CC-0056,2024-08-02,North India,WH-MUM-01,Light_Beer_330ml,Distributor,8,7.3,6.3,9.4,No,0,66.0,3.0,Compliant,0
+CC-0057,2024-01-23,West India,WH-MUM-01,Lager_500ml,Primary Warehouse,8,11.0,9.6,13.0,Yes,136,73.6,16.2,Disposed,20610
+CC-0058,2024-06-29,South India,WH-BLR-01,Lager_500ml,Distributor,4,5.2,3.0,7.2,No,0,61.9,11.2,Compliant,0
+CC-0059,2024-09-24,North India,WH-HYD-01,IPA_330ml,Brewery,2,3.6,1.9,6.1,Yes,25,82.1,3.7,Compliant,2539
+CC-0060,2024-12-03,South India,WH-HYD-01,Light_Beer_330ml,Primary Warehouse,8,8.5,7.7,9.7,No,0,64.7,2.1,Compliant,0
+CC-0061,2024-07-11,East India,WH-KOL-01,Strong_Beer_500ml,Primary Warehouse,4,4.7,3.5,7.3,No,0,61.1,10.7,Compliant,0
+CC-0062,2024-10-18,East India,WH-BLR-01,Premium_Lager_330ml,Primary Warehouse,2,2.7,0.8,3.7,No,0,58.3,17.3,Compliant,0
+CC-0063,2024-04-12,East India,WH-KOL-01,Stout_650ml,Distributor,4,4.2,2.9,5.2,No,0,68.3,5.4,Compliant,0
+CC-0064,2024-12-04,South India,WH-KOL-01,Premium_Lager_330ml,Regional Hub,4,4.8,4.0,6.5,No,0,65.2,6.5,Compliant,0
+CC-0065,2024-04-26,West India,WH-KOL-01,Stout_650ml,Retail Outlet,8,6.1,4.6,7.6,Yes,113,77.9,1.8,Disposed,12478
+CC-0066,2024-07-12,West India,WH-HYD-01,Stout_650ml,Regional Hub,4,1.3,0.0,4.5,Yes,84,73.1,2.3,Quarantined,15550
+CC-0067,2024-07-20,South India,WH-KOL-01,Lager_500ml,Regional Hub,2,1.3,-0.2,4.6,Yes,88,57.1,15.2,Quarantined,16199
+CC-0068,2024-01-31,West India,WH-KOL-01,Lager_500ml,Brewery,4,7.5,5.6,9.2,Yes,31,57.3,18.0,Disposed,3104
+CC-0069,2024-03-06,Central India,WH-BLR-01,Strong_Beer_500ml,Regional Hub,2,4.3,2.1,6.4,Yes,86,57.0,11.4,Compliant,12898
+CC-0070,2024-04-05,North India,WH-KOL-01,Strong_Beer_500ml,Distributor,8,6.0,5.3,7.2,Yes,97,61.4,3.4,Quarantined,11076
+CC-0071,2024-11-05,West India,WH-MUM-01,Lager_500ml,Brewery,2,2.8,1.5,5.8,No,0,67.1,2.4,Compliant,0
+CC-0072,2024-02-02,West India,WH-KOL-01,IPA_330ml,Brewery,2,-0.0,-2.4,2.7,Yes,116,58.5,2.4,Disposed,14164
+CC-0073,2024-09-26,Central India,WH-BLR-01,Stout_650ml,Brewery,2,3.1,2.3,5.3,No,0,56.7,10.6,Compliant,0
+CC-0074,2024-02-27,East India,WH-BLR-01,Premium_Lager_330ml,Primary Warehouse,4,6.7,4.3,7.4,No,0,57.9,16.4,Compliant,0
+CC-0075,2024-03-23,East India,WH-BLR-01,Premium_Lager_330ml,Distributor,6,7.7,5.8,8.7,No,0,84.3,3.6,Compliant,0
+CC-0076,2024-12-03,West India,WH-KOL-01,Premium_Lager_330ml,Brewery,2,3.4,1.7,6.7,Yes,17,65.2,6.2,Disposed,2481
+CC-0077,2024-12-24,West India,WH-HYD-01,Strong_Beer_500ml,Primary Warehouse,4,5.2,3.4,8.0,No,0,78.6,8.2,Compliant,0
+CC-0078,2024-08-27,South India,WH-HYD-01,Strong_Beer_500ml,Distributor,8,8.3,6.1,11.5,No,0,68.8,1.2,Compliant,0
+CC-0079,2024-01-14,West India,WH-DEL-01,Strong_Beer_500ml,Primary Warehouse,4,1.8,0.6,4.7,Yes,129,55.8,10.7,Disposed,14491
+CC-0080,2024-11-28,South India,WH-MUM-01,IPA_330ml,Brewery,4,5.5,3.0,8.6,Yes,145,62.4,14.5,Disposed,17391
+CC-0081,2024-04-18,South India,WH-DEL-01,IPA_330ml,Distributor,6,8.4,6.2,9.1,No,0,76.8,6.9,Compliant,0
+CC-0082,2024-01-27,North India,WH-KOL-01,IPA_330ml,Retail Outlet,8,7.9,5.7,10.6,Yes,92,83.7,4.8,Compliant,8956
+CC-0083,2024-06-23,West India,WH-MUM-01,Strong_Beer_500ml,Regional Hub,8,7.8,7.1,10.2,No,0,67.3,5.0,Compliant,0
+CC-0084,2024-09-16,North India,WH-DEL-01,Wheat_330ml,Regional Hub,4,2.2,1.5,3.0,Yes,174,60.5,17.3,Compliant,19677
+CC-0085,2024-03-10,North India,WH-DEL-01,IPA_330ml,Regional Hub,8,5.8,4.9,8.5,Yes,57,73.6,10.3,Compliant,4968
+CC-0086,2024-02-18,Central India,WH-DEL-01,Lager_500ml,Distributor,6,8.4,6.6,9.0,No,0,68.1,3.2,Compliant,0
+CC-0087,2024-02-18,North India,WH-KOL-01,Strong_Beer_500ml,Distributor,6,5.9,5.0,8.6,No,0,66.9,17.3,Compliant,0
+CC-0088,2024-04-26,North India,WH-KOL-01,Stout_650ml,Brewery,8,8.5,7.3,9.3,No,0,71.9,16.1,Compliant,0
+CC-0089,2024-05-19,Central India,WH-BLR-01,IPA_330ml,Primary Warehouse,4,7.7,5.6,9.1,Yes,159,77.7,7.2,Quarantined,30141
+CC-0090,2024-05-08,North India,WH-KOL-01,Lager_500ml,Distributor,6,8.6,6.9,9.5,No,0,55.2,15.0,Compliant,0
+CC-0091,2024-02-21,South India,WH-DEL-01,Light_Beer_330ml,Retail Outlet,6,7.0,6.1,9.5,No,0,64.4,7.6,Compliant,0
+CC-0092,2024-11-14,South India,WH-KOL-01,Light_Beer_330ml,Brewery,2,4.9,2.8,5.6,No,0,74.5,3.0,Compliant,0
+CC-0093,2024-05-09,North India,WH-HYD-01,Lager_500ml,Distributor,4,3.3,1.4,6.1,Yes,77,61.0,16.4,Disposed,5536
+CC-0094,2024-04-04,East India,WH-BLR-01,Strong_Beer_500ml,Primary Warehouse,4,7.2,5.1,9.9,Yes,65,84.4,15.8,Quarantined,9822
+CC-0095,2024-04-19,East India,WH-BLR-01,Strong_Beer_500ml,Primary Warehouse,8,9.1,7.3,11.5,No,0,75.2,13.2,Compliant,0
+CC-0096,2024-11-14,North India,WH-MUM-01,Premium_Lager_330ml,Distributor,4,3.2,1.1,3.7,Yes,74,78.5,13.1,Compliant,5508
+CC-0097,2024-02-01,Central India,WH-DEL-01,IPA_330ml,Primary Warehouse,8,12.5,11.6,15.9,Yes,94,83.4,15.3,Compliant,7192
+CC-0098,2024-07-30,South India,WH-DEL-01,Stout_650ml,Brewery,4,5.4,4.8,8.6,Yes,23,62.5,7.0,Disposed,4261
+CC-0099,2024-01-14,West India,WH-MUM-01,Stout_650ml,Distributor,6,6.2,4.6,7.7,No,0,66.1,11.1,Compliant,0
+CC-0100,2024-03-11,West India,WH-BLR-01,IPA_330ml,Regional Hub,8,8.8,7.0,11.0,No,0,61.2,3.2,Compliant,0
+CC-0101,2024-08-04,East India,WH-KOL-01,Stout_650ml,Brewery,2,-0.1,-1.1,3.3,Yes,158,67.2,12.5,Disposed,15921
+CC-0102,2024-10-22,West India,WH-MUM-01,Wheat_330ml,Distributor,2,5.2,3.3,7.7,Yes,121,79.3,17.0,Compliant,17899
+CC-0103,2024-10-22,Central India,WH-BLR-01,Stout_650ml,Distributor,8,8.6,7.5,11.2,No,0,62.9,8.5,Compliant,0
+CC-0104,2024-05-11,North India,WH-KOL-01,Lager_500ml,Retail Outlet,6,11.3,9.2,12.2,Yes,17,82.8,13.5,Quarantined,2969
+CC-0105,2024-01-09,West India,WH-DEL-01,Wheat_330ml,Retail Outlet,6,9.6,7.5,12.8,Yes,163,61.1,1.9,Quarantined,28130
+CC-0106,2024-02-19,Central India,WH-MUM-01,Wheat_330ml,Primary Warehouse,8,12.8,11.7,16.2,Yes,116,79.2,2.8,Disposed,10234
+CC-0107,2024-04-19,East India,WH-KOL-01,IPA_330ml,Distributor,2,2.8,0.3,3.6,No,0,73.5,8.6,Compliant,0
+CC-0108,2024-04-21,North India,WH-DEL-01,Strong_Beer_500ml,Primary Warehouse,4,3.8,2.6,6.8,No,0,66.5,17.0,Compliant,0
+CC-0109,2024-08-31,North India,WH-BLR-01,IPA_330ml,Regional Hub,8,7.9,7.1,8.9,No,0,75.4,2.1,Compliant,0
+CC-0110,2024-01-08,South India,WH-KOL-01,Premium_Lager_330ml,Primary Warehouse,8,9.7,8.9,12.7,Yes,109,59.6,14.6,Compliant,11897
+CC-0111,2024-04-10,South India,WH-KOL-01,Stout_650ml,Brewery,2,2.5,1.2,5.4,No,0,59.4,12.2,Compliant,0
+CC-0112,2024-01-25,West India,WH-BLR-01,IPA_330ml,Primary Warehouse,4,6.4,5.6,9.8,Yes,178,60.4,6.3,Disposed,10500
+CC-0113,2024-01-03,South India,WH-BLR-01,Light_Beer_330ml,Retail Outlet,8,5.9,4.5,8.6,Yes,63,64.3,13.4,Disposed,3927
+CC-0114,2024-03-03,South India,WH-BLR-01,Light_Beer_330ml,Regional Hub,6,7.2,5.2,7.9,No,0,57.3,12.9,Compliant,0
+CC-0115,2024-07-16,Central India,WH-DEL-01,Strong_Beer_500ml,Retail Outlet,4,7.2,6.4,10.1,Yes,138,70.3,2.0,Disposed,26899
+CC-0116,2024-09-16,North India,WH-DEL-01,Wheat_330ml,Primary Warehouse,8,10.6,8.7,13.8,Yes,95,69.3,3.3,Compliant,8979
+CC-0117,2024-12-13,North India,WH-MUM-01,Wheat_330ml,Distributor,6,7.6,6.2,9.6,No,0,82.2,10.6,Compliant,0
+CC-0118,2024-07-29,Central India,WH-HYD-01,Stout_650ml,Retail Outlet,2,0.9,-0.4,1.7,Yes,66,79.8,7.5,Disposed,11894
+CC-0119,2024-10-12,North India,WH-HYD-01,IPA_330ml,Brewery,4,5.9,4.0,7.9,No,0,58.1,3.9,Compliant,0
+CC-0120,2024-03-13,West India,WH-KOL-01,Premium_Lager_330ml,Regional Hub,4,4.1,2.1,4.7,No,0,82.1,9.6,Compliant,0
+CC-0121,2024-03-28,South India,WH-KOL-01,Light_Beer_330ml,Regional Hub,6,6.7,6.1,8.3,No,0,55.3,2.3,Compliant,0
+CC-0122,2024-05-15,West India,WH-KOL-01,Premium_Lager_330ml,Retail Outlet,2,4.1,2.4,4.6,No,0,65.7,14.5,Compliant,0
+CC-0123,2024-02-15,West India,WH-KOL-01,Wheat_330ml,Regional Hub,2,2.8,1.4,4.1,No,0,59.0,9.2,Compliant,0
+CC-0124,2024-04-20,Central India,WH-BLR-01,Premium_Lager_330ml,Retail Outlet,8,8.2,7.1,11.6,No,0,79.2,11.1,Compliant,0
+CC-0125,2024-04-28,West India,WH-HYD-01,Light_Beer_330ml,Regional Hub,2,4.0,1.7,6.7,Yes,100,61.5,17.1,Compliant,18528
+CC-0126,2024-07-19,North India,WH-BLR-01,Stout_650ml,Retail Outlet,8,6.3,5.4,8.6,Yes,137,75.1,4.4,Quarantined,11044
+CC-0127,2024-11-06,Central India,WH-BLR-01,Wheat_330ml,Regional Hub,2,-0.4,-1.6,2.6,Yes,141,57.3,14.5,Disposed,19180
+CC-0128,2024-06-23,West India,WH-HYD-01,IPA_330ml,Distributor,8,6.1,5.3,7.9,Yes,91,79.2,5.0,Disposed,17816
+CC-0129,2024-07-24,North India,WH-KOL-01,Wheat_330ml,Retail Outlet,4,5.4,3.1,7.2,No,0,72.0,16.5,Compliant,0
+CC-0130,2024-03-29,West India,WH-BLR-01,Strong_Beer_500ml,Distributor,4,5.9,4.5,7.6,No,0,55.1,4.3,Compliant,0
+CC-0131,2024-11-01,East India,WH-KOL-01,Stout_650ml,Distributor,2,4.5,3.1,5.6,No,0,76.8,3.8,Compliant,0
+CC-0132,2024-02-08,South India,WH-HYD-01,Strong_Beer_500ml,Retail Outlet,6,4.3,3.5,5.0,Yes,45,84.4,17.9,Disposed,5509
+CC-0133,2024-04-15,South India,WH-BLR-01,Premium_Lager_330ml,Primary Warehouse,8,12.1,10.3,14.7,Yes,69,59.4,11.0,Disposed,6356
+CC-0134,2024-06-22,West India,WH-MUM-01,Lager_500ml,Primary Warehouse,4,4.5,3.8,5.6,No,0,72.2,11.5,Compliant,0
+CC-0135,2024-05-11,East India,WH-DEL-01,Light_Beer_330ml,Brewery,4,8.2,5.8,8.8,Yes,81,78.9,2.2,Compliant,14600
+CC-0136,2024-10-07,East India,WH-HYD-01,IPA_330ml,Brewery,4,1.5,0.8,4.2,Yes,80,58.7,9.6,Compliant,4609
+CC-0137,2024-09-20,North India,WH-BLR-01,Light_Beer_330ml,Brewery,8,8.3,7.5,9.4,No,0,77.1,4.2,Compliant,0
+CC-0138,2024-01-26,North India,WH-KOL-01,Lager_500ml,Primary Warehouse,6,7.4,6.2,8.8,No,0,65.2,9.4,Compliant,0
+CC-0139,2024-09-27,South India,WH-DEL-01,Light_Beer_330ml,Retail Outlet,6,7.2,4.9,10.0,No,0,66.5,6.0,Compliant,0
+CC-0140,2024-08-16,South India,WH-HYD-01,Wheat_330ml,Retail Outlet,6,6.7,5.0,8.0,No,0,81.8,2.0,Compliant,0
+CC-0141,2024-10-10,North India,WH-MUM-01,IPA_330ml,Distributor,6,8.9,7.1,11.4,Yes,116,58.9,11.2,Compliant,20493
+CC-0142,2024-04-18,West India,WH-DEL-01,Premium_Lager_330ml,Retail Outlet,2,4.8,2.4,7.7,Yes,99,75.0,8.8,Quarantined,16405
+CC-0143,2024-01-05,Central India,WH-KOL-01,Wheat_330ml,Distributor,4,4.3,2.0,7.8,No,0,76.2,13.1,Compliant,0
+CC-0144,2024-06-19,South India,WH-DEL-01,Lager_500ml,Brewery,4,3.2,1.3,3.7,Yes,139,67.9,5.9,Compliant,16081
+CC-0145,2024-10-28,South India,WH-MUM-01,Lager_500ml,Regional Hub,2,5.2,4.6,6.8,Yes,42,71.8,15.1,Disposed,3024
+CC-0146,2024-03-02,North India,WH-MUM-01,Light_Beer_330ml,Regional Hub,4,4.4,2.3,7.3,No,0,76.7,3.8,Compliant,0
+CC-0147,2024-09-01,South India,WH-DEL-01,Stout_650ml,Retail Outlet,2,0.1,-2.0,0.6,Yes,124,79.8,5.8,Quarantined,10099
+CC-0148,2024-06-16,South India,WH-KOL-01,Strong_Beer_500ml,Brewery,2,2.9,2.2,3.8,No,0,72.6,2.1,Compliant,0
+CC-0149,2024-11-26,South India,WH-HYD-01,Lager_500ml,Retail Outlet,4,6.6,4.6,7.4,No,0,57.9,14.9,Compliant,0
+CC-0150,2024-08-31,Central India,WH-DEL-01,Lager_500ml,Regional Hub,2,1.6,0.3,2.3,No,0,79.2,1.9,Compliant,0
+CC-0151,2024-03-31,West India,WH-HYD-01,Light_Beer_330ml,Distributor,8,12.0,10.7,12.6,Yes,15,60.8,1.2,Compliant,1324
+CC-0152,2024-08-02,Central India,WH-HYD-01,Stout_650ml,Regional Hub,6,3.8,1.7,5.4,Yes,130,83.8,8.5,Compliant,25735
+CC-0153,2024-01-22,East India,WH-HYD-01,Premium_Lager_330ml,Regional Hub,6,2.5,1.7,5.4,Yes,70,68.2,10.9,Quarantined,11473
+CC-0154,2024-10-04,South India,WH-MUM-01,Light_Beer_330ml,Retail Outlet,8,12.4,11.2,13.1,Yes,85,71.6,12.7,Disposed,5109
+CC-0155,2024-09-04,East India,WH-DEL-01,Light_Beer_330ml,Retail Outlet,2,4.3,3.7,5.8,No,0,79.9,14.2,Compliant,0
+CC-0156,2024-11-10,East India,WH-HYD-01,Lager_500ml,Retail Outlet,8,8.0,6.8,10.3,No,0,65.2,14.6,Compliant,0
+CC-0157,2024-09-07,North India,WH-BLR-01,Lager_500ml,Brewery,6,6.5,4.3,8.4,No,0,64.9,9.9,Compliant,0
+CC-0158,2024-01-12,West India,WH-DEL-01,Light_Beer_330ml,Regional Hub,6,4.6,3.8,5.7,Yes,170,59.3,8.5,Compliant,11585
+CC-0159,2024-05-12,North India,WH-DEL-01,Stout_650ml,Primary Warehouse,2,3.4,1.1,5.5,No,0,84.9,5.3,Compliant,0
+CC-0160,2024-10-10,North India,WH-KOL-01,Wheat_330ml,Retail Outlet,4,7.2,4.9,9.5,Yes,133,74.3,13.5,Quarantined,6753
+CC-0161,2024-09-27,North India,WH-BLR-01,Stout_650ml,Retail Outlet,8,9.4,7.8,10.9,No,0,83.0,3.9,Compliant,0
+CC-0162,2024-04-20,East India,WH-DEL-01,Wheat_330ml,Primary Warehouse,6,8.4,6.5,9.3,No,0,72.4,10.3,Compliant,0
+CC-0163,2024-10-13,East India,WH-BLR-01,IPA_330ml,Distributor,2,2.6,1.9,5.1,No,0,73.9,15.5,Compliant,0
+CC-0164,2024-11-28,Central India,WH-BLR-01,Premium_Lager_330ml,Distributor,6,6.0,4.9,9.0,No,0,84.9,3.1,Compliant,0
+CC-0165,2024-02-06,East India,WH-MUM-01,Strong_Beer_500ml,Primary Warehouse,4,5.6,4.4,6.5,No,0,60.7,12.7,Compliant,0
+CC-0166,2024-03-26,East India,WH-HYD-01,Premium_Lager_330ml,Regional Hub,2,4.8,3.3,5.6,No,0,66.6,5.1,Compliant,0
+CC-0167,2024-09-16,North India,WH-MUM-01,Stout_650ml,Primary Warehouse,4,5.2,4.4,7.6,No,0,68.1,6.9,Compliant,0
+CC-0168,2024-07-11,East India,WH-KOL-01,Stout_650ml,Distributor,8,8.2,7.5,11.4,No,0,73.0,3.1,Compliant,0
+CC-0169,2024-04-30,West India,WH-HYD-01,Lager_500ml,Regional Hub,8,6.1,5.2,9.5,Yes,62,66.9,14.6,Disposed,6700
+CC-0170,2024-05-28,South India,WH-MUM-01,IPA_330ml,Distributor,6,6.3,5.7,8.4,No,0,65.1,7.8,Compliant,0
+CC-0171,2024-06-26,Central India,WH-BLR-01,Light_Beer_330ml,Regional Hub,2,3.5,1.8,5.4,No,0,56.0,17.2,Compliant,0
+CC-0172,2024-11-09,North India,WH-DEL-01,Light_Beer_330ml,Distributor,4,3.7,1.2,5.3,Yes,157,71.0,13.9,Disposed,14362
+CC-0173,2024-08-02,Central India,WH-BLR-01,IPA_330ml,Primary Warehouse,8,8.0,6.0,9.8,No,0,59.8,9.4,Compliant,0
+CC-0174,2024-03-19,South India,WH-BLR-01,Lager_500ml,Retail Outlet,2,1.1,-0.7,3.6,Yes,178,63.1,1.1,Disposed,12304
+CC-0175,2024-09-29,West India,WH-HYD-01,Strong_Beer_500ml,Distributor,2,-0.3,-2.6,0.9,Yes,130,70.9,2.9,Quarantined,19041
+CC-0176,2024-07-17,North India,WH-MUM-01,Stout_650ml,Distributor,6,8.6,7.7,10.0,No,0,74.9,5.7,Compliant,0
+CC-0177,2024-10-07,East India,WH-DEL-01,Strong_Beer_500ml,Brewery,6,6.6,5.1,7.3,No,0,84.0,14.5,Compliant,0
+CC-0178,2024-10-08,South India,WH-BLR-01,Lager_500ml,Brewery,6,7.4,6.5,8.1,No,0,68.1,10.7,Compliant,0
+CC-0179,2024-06-30,South India,WH-MUM-01,Stout_650ml,Regional Hub,4,3.8,3.3,5.7,No,0,76.0,15.1,Compliant,0
+CC-0180,2024-07-19,West India,WH-KOL-01,Lager_500ml,Retail Outlet,2,-0.1,-0.8,1.5,Yes,124,63.2,13.6,Compliant,24794
+CC-0181,2024-07-26,West India,WH-MUM-01,Wheat_330ml,Brewery,8,11.1,9.3,12.9,Yes,57,84.3,15.4,Quarantined,6700
+CC-0182,2024-06-17,South India,WH-HYD-01,Premium_Lager_330ml,Regional Hub,4,7.9,6.2,11.4,Yes,173,82.4,9.9,Quarantined,27282
+CC-0183,2024-05-24,South India,WH-KOL-01,IPA_330ml,Retail Outlet,8,12.2,11.0,15.2,Yes,21,70.6,13.8,Disposed,2644
+CC-0184,2024-05-12,North India,WH-BLR-01,Wheat_330ml,Regional Hub,4,2.5,1.0,3.6,Yes,96,60.9,13.8,Quarantined,6226
+CC-0185,2024-11-07,Central India,WH-MUM-01,Strong_Beer_500ml,Retail Outlet,8,8.4,7.3,10.8,No,0,69.5,6.6,Compliant,0
+CC-0186,2024-07-17,East India,WH-DEL-01,Strong_Beer_500ml,Regional Hub,6,8.1,6.5,10.1,Yes,94,62.0,14.6,Disposed,17220
+CC-0187,2024-05-05,Central India,WH-KOL-01,Premium_Lager_330ml,Retail Outlet,8,11.9,9.8,13.5,Yes,137,61.7,14.0,Disposed,10084
+CC-0188,2024-03-24,South India,WH-HYD-01,Premium_Lager_330ml,Primary Warehouse,2,4.7,3.6,7.8,Yes,43,72.2,1.9,Quarantined,7630
+CC-0189,2024-06-08,South India,WH-HYD-01,Lager_500ml,Retail Outlet,6,5.3,3.3,8.1,Yes,41,63.6,1.7,Disposed,3228
+CC-0190,2024-12-14,North India,WH-MUM-01,Wheat_330ml,Regional Hub,8,10.3,8.6,12.9,Yes,60,80.0,14.6,Disposed,10045
+CC-0191,2024-05-14,Central India,WH-DEL-01,Light_Beer_330ml,Distributor,8,8.1,5.8,11.1,Yes,45,67.5,15.3,Quarantined,3954
+CC-0192,2024-11-04,Central India,WH-MUM-01,Strong_Beer_500ml,Brewery,6,6.0,4.5,9.0,No,0,70.1,14.8,Compliant,0
+CC-0193,2024-03-19,North India,WH-MUM-01,Strong_Beer_500ml,Primary Warehouse,6,9.4,8.2,12.3,Yes,47,80.3,3.8,Disposed,7118
+CC-0194,2024-09-09,West India,WH-MUM-01,IPA_330ml,Regional Hub,2,5.2,4.5,8.4,Yes,109,80.1,13.9,Compliant,9208
+CC-0195,2024-06-09,Central India,WH-HYD-01,Lager_500ml,Retail Outlet,4,3.8,1.8,5.7,Yes,34,81.5,17.1,Compliant,5123
+CC-0196,2024-07-28,East India,WH-BLR-01,Lager_500ml,Regional Hub,6,3.9,2.0,5.4,Yes,86,75.3,15.1,Disposed,6240
+CC-0197,2024-06-23,North India,WH-MUM-01,Lager_500ml,Brewery,6,5.2,3.7,6.9,Yes,67,79.3,5.0,Quarantined,10272
+CC-0198,2024-11-19,Central India,WH-DEL-01,Light_Beer_330ml,Regional Hub,8,8.3,6.2,10.8,No,0,65.8,1.8,Compliant,0
+CC-0199,2024-09-30,East India,WH-DEL-01,IPA_330ml,Regional Hub,6,8.2,5.9,10.3,Yes,70,68.7,4.5,Compliant,4990
+CC-0200,2024-01-19,Central India,WH-KOL-01,Light_Beer_330ml,Primary Warehouse,2,2.8,0.6,5.7,No,0,73.2,3.9,Compliant,0
+CC-0201,2024-06-28,West India,WH-HYD-01,Strong_Beer_500ml,Brewery,8,7.6,6.3,10.2,No,0,69.8,15.4,Compliant,0
+CC-0202,2024-12-08,West India,WH-HYD-01,Lager_500ml,Regional Hub,8,2.7,1.6,4.0,Yes,76,78.7,3.0,Disposed,9523
+CC-0203,2024-03-22,West India,WH-HYD-01,Premium_Lager_330ml,Primary Warehouse,4,2.9,0.7,4.4,Yes,50,72.2,8.5,Quarantined,6652
+CC-0204,2024-12-16,West India,WH-BLR-01,Wheat_330ml,Primary Warehouse,6,10.2,8.7,11.7,Yes,32,64.4,4.8,Quarantined,5945
+CC-0205,2024-12-13,South India,WH-KOL-01,IPA_330ml,Primary Warehouse,4,4.4,1.9,7.1,Yes,28,56.4,4.2,Disposed,1781
+CC-0206,2024-12-12,North India,WH-BLR-01,IPA_330ml,Brewery,8,10.4,8.9,11.4,No,0,58.5,16.9,Compliant,0
+CC-0207,2024-11-11,South India,WH-KOL-01,Lager_500ml,Regional Hub,4,7.2,6.5,8.6,Yes,105,57.5,7.6,Compliant,19422
+CC-0208,2024-07-30,East India,WH-KOL-01,Premium_Lager_330ml,Distributor,4,1.5,-0.9,4.9,Yes,118,82.5,8.8,Quarantined,20291
+CC-0209,2024-12-20,North India,WH-KOL-01,IPA_330ml,Distributor,8,6.3,5.6,6.9,Yes,154,56.5,2.6,Disposed,14397
+CC-0210,2024-04-05,South India,WH-KOL-01,IPA_330ml,Distributor,2,6.7,4.4,8.3,Yes,116,62.6,9.6,Compliant,15156
+CC-0211,2024-12-23,North India,WH-DEL-01,Wheat_330ml,Distributor,8,6.4,5.4,9.3,Yes,34,84.2,5.2,Disposed,2630
+CC-0212,2024-06-21,East India,WH-KOL-01,IPA_330ml,Regional Hub,4,2.3,-0.1,5.6,Yes,108,73.3,2.0,Disposed,16071
+CC-0213,2024-04-18,Central India,WH-HYD-01,Light_Beer_330ml,Primary Warehouse,8,8.3,7.6,10.6,No,0,73.1,4.6,Compliant,0
+CC-0214,2024-03-16,East India,WH-BLR-01,Lager_500ml,Distributor,4,4.5,3.9,7.3,No,0,56.4,15.7,Compliant,0
+CC-0215,2024-01-31,South India,WH-DEL-01,Light_Beer_330ml,Retail Outlet,8,10.3,9.6,13.4,Yes,179,79.8,16.3,Quarantined,20699
+CC-0216,2024-02-15,South India,WH-HYD-01,Wheat_330ml,Distributor,4,5.4,3.1,7.6,No,0,62.2,13.2,Compliant,0
+CC-0217,2024-07-12,Central India,WH-HYD-01,IPA_330ml,Distributor,8,9.7,7.9,11.3,No,0,62.8,6.3,Compliant,0
+CC-0218,2024-07-28,Central India,WH-KOL-01,Premium_Lager_330ml,Brewery,2,4.1,3.1,5.7,No,0,77.5,15.2,Compliant,0
+CC-0219,2024-09-29,South India,WH-KOL-01,IPA_330ml,Brewery,4,2.5,0.6,4.7,Yes,80,57.7,16.7,Quarantined,11636
+CC-0220,2024-06-07,East India,WH-DEL-01,Strong_Beer_500ml,Regional Hub,4,6.9,6.3,10.3,Yes,36,81.0,12.0,Quarantined,3319
+CC-0221,2024-09-19,West India,WH-BLR-01,Light_Beer_330ml,Regional Hub,4,3.9,2.5,5.1,No,0,63.0,4.5,Compliant,0
+CC-0222,2024-07-19,North India,WH-BLR-01,IPA_330ml,Regional Hub,2,2.4,1.1,5.1,No,0,55.2,15.6,Compliant,0
+CC-0223,2024-05-11,East India,WH-MUM-01,IPA_330ml,Retail Outlet,4,6.2,5.6,9.2,Yes,103,82.0,16.6,Disposed,8897
+CC-0224,2024-02-27,North India,WH-DEL-01,Lager_500ml,Primary Warehouse,8,7.9,5.5,9.7,Yes,107,60.9,11.8,Disposed,7592
+CC-0225,2024-12-25,Central India,WH-KOL-01,IPA_330ml,Regional Hub,8,9.9,8.5,12.9,Yes,44,75.0,12.5,Disposed,4359
+CC-0226,2024-12-24,North India,WH-BLR-01,Premium_Lager_330ml,Brewery,4,6.2,5.5,7.3,No,0,69.2,14.6,Compliant,0
+CC-0227,2024-10-08,North India,WH-MUM-01,Lager_500ml,Regional Hub,2,-1.0,-2.0,-0.2,Yes,124,72.3,6.6,Compliant,11871
+CC-0228,2024-06-29,West India,WH-DEL-01,Premium_Lager_330ml,Regional Hub,4,3.3,1.5,5.2,Yes,95,66.4,15.7,Compliant,18131
+CC-0229,2024-09-19,East India,WH-BLR-01,Premium_Lager_330ml,Regional Hub,8,8.3,6.2,9.8,No,0,75.8,10.4,Compliant,0
+CC-0230,2024-08-05,Central India,WH-MUM-01,Premium_Lager_330ml,Retail Outlet,4,1.3,0.4,2.0,Yes,88,72.4,5.7,Disposed,11852
+CC-0231,2024-08-06,West India,WH-HYD-01,Wheat_330ml,Retail Outlet,8,5.5,3.4,8.4,Yes,64,83.1,12.6,Quarantined,9699
+CC-0232,2024-10-11,West India,WH-DEL-01,Wheat_330ml,Regional Hub,6,5.7,3.7,8.7,Yes,92,60.1,1.0,Disposed,8918
+CC-0233,2024-11-12,Central India,WH-DEL-01,Light_Beer_330ml,Distributor,4,4.9,3.0,5.4,No,0,83.7,7.1,Compliant,0
+CC-0234,2024-11-27,West India,WH-BLR-01,Stout_650ml,Distributor,4,3.1,2.0,3.9,No,0,72.7,11.0,Compliant,0
+CC-0235,2024-05-24,North India,WH-HYD-01,Lager_500ml,Brewery,2,2.4,1.8,3.5,No,0,76.6,16.1,Compliant,0
+CC-0236,2024-01-01,Central India,WH-KOL-01,Stout_650ml,Primary Warehouse,4,5.9,3.6,9.1,Yes,35,73.0,2.9,Disposed,2850
+CC-0237,2024-09-24,South India,WH-MUM-01,Light_Beer_330ml,Distributor,2,0.6,-0.1,3.3,Yes,66,81.2,4.9,Disposed,9688
+CC-0238,2024-08-29,South India,WH-BLR-01,Strong_Beer_500ml,Distributor,8,10.5,9.5,13.7,Yes,140,65.2,2.1,Compliant,19271
+CC-0239,2024-08-07,Central India,WH-KOL-01,Premium_Lager_330ml,Primary Warehouse,4,6.3,4.9,8.0,No,0,66.7,7.2,Compliant,0
+CC-0240,2024-12-19,West India,WH-DEL-01,Light_Beer_330ml,Distributor,8,9.4,8.6,12.6,Yes,154,61.4,3.9,Compliant,12310
+CC-0241,2024-04-11,North India,WH-KOL-01,IPA_330ml,Retail Outlet,2,2.2,1.2,3.6,No,0,72.3,6.8,Compliant,0
+CC-0242,2024-04-17,South India,WH-HYD-01,Light_Beer_330ml,Retail Outlet,4,0.6,-0.0,2.1,Yes,41,77.1,1.9,Quarantined,5285
+CC-0243,2024-04-17,West India,WH-MUM-01,Stout_650ml,Primary Warehouse,2,0.7,-0.8,3.6,Yes,82,84.9,8.0,Compliant,12798
+CC-0244,2024-07-16,West India,WH-DEL-01,Strong_Beer_500ml,Regional Hub,6,6.9,5.1,9.6,No,0,60.5,12.3,Compliant,0
+CC-0245,2024-05-15,South India,WH-MUM-01,Lager_500ml,Brewery,4,6.6,4.5,8.3,Yes,156,74.7,17.6,Compliant,9616
+CC-0246,2024-09-21,Central India,WH-DEL-01,Lager_500ml,Brewery,4,3.0,0.9,5.7,Yes,45,74.5,2.4,Quarantined,3617
+CC-0247,2024-06-23,West India,WH-KOL-01,Stout_650ml,Distributor,2,3.4,1.3,5.7,No,0,58.3,9.9,Compliant,0
+CC-0248,2024-06-22,West India,WH-BLR-01,Light_Beer_330ml,Brewery,4,5.8,5.1,9.0,Yes,119,66.6,8.7,Disposed,16585
+CC-0249,2024-11-21,Central India,WH-DEL-01,Wheat_330ml,Distributor,6,8.3,5.9,10.0,No,0,61.9,2.4,Compliant,0
+CC-0250,2024-08-05,South India,WH-HYD-01,Strong_Beer_500ml,Regional Hub,4,3.3,0.8,4.0,Yes,36,55.8,12.6,Quarantined,4184
+CC-0251,2024-10-11,Central India,WH-MUM-01,Lager_500ml,Retail Outlet,6,8.4,6.2,10.6,Yes,61,84.4,2.7,Compliant,5578
+CC-0252,2024-08-18,West India,WH-DEL-01,Light_Beer_330ml,Regional Hub,6,8.2,6.7,9.4,No,0,81.3,16.3,Compliant,0
+CC-0253,2024-08-26,West India,WH-HYD-01,IPA_330ml,Retail Outlet,6,4.5,2.7,6.3,Yes,103,72.2,5.3,Quarantined,14446
+CC-0254,2024-01-22,Central India,WH-DEL-01,Light_Beer_330ml,Distributor,6,7.9,5.8,11.1,Yes,135,70.3,14.1,Compliant,17311
+CC-0255,2024-05-08,East India,WH-KOL-01,Wheat_330ml,Regional Hub,2,5.0,4.1,7.1,Yes,88,59.0,12.5,Quarantined,5689
+CC-0256,2024-09-08,North India,WH-BLR-01,IPA_330ml,Retail Outlet,6,7.6,5.1,9.6,No,0,70.8,17.4,Compliant,0
+CC-0257,2024-06-28,Central India,WH-KOL-01,Premium_Lager_330ml,Primary Warehouse,6,5.8,4.1,8.3,No,0,71.8,1.7,Compliant,0
+CC-0258,2024-11-12,East India,WH-KOL-01,IPA_330ml,Distributor,6,6.1,3.8,7.5,Yes,69,69.3,17.3,Compliant,9449
+CC-0259,2024-12-11,South India,WH-HYD-01,Strong_Beer_500ml,Distributor,8,10.5,8.2,13.4,Yes,39,84.0,14.4,Quarantined,7435
+CC-0260,2024-08-04,East India,WH-DEL-01,Strong_Beer_500ml,Retail Outlet,2,3.2,1.5,4.6,No,0,74.8,2.4,Compliant,0
+CC-0261,2024-04-17,South India,WH-HYD-01,Wheat_330ml,Retail Outlet,6,7.3,6.3,9.4,No,0,83.9,5.7,Compliant,0
+CC-0262,2024-02-17,Central India,WH-BLR-01,Premium_Lager_330ml,Primary Warehouse,8,9.0,7.0,10.8,No,0,67.4,13.9,Compliant,0
+CC-0263,2024-03-09,South India,WH-DEL-01,Light_Beer_330ml,Regional Hub,4,7.3,5.5,9.5,Yes,84,73.9,13.9,Compliant,12222
+CC-0264,2024-11-26,Central India,WH-BLR-01,Strong_Beer_500ml,Brewery,8,10.8,9.4,13.2,Yes,177,74.7,3.3,Compliant,23678
+CC-0265,2024-11-22,West India,WH-MUM-01,Strong_Beer_500ml,Retail Outlet,8,8.7,8.1,10.1,No,0,59.9,14.6,Compliant,0
+CC-0266,2024-08-14,East India,WH-MUM-01,Premium_Lager_330ml,Retail Outlet,6,8.7,6.7,10.4,Yes,108,59.8,4.4,Quarantined,14414
+CC-0267,2024-08-08,Central India,WH-BLR-01,IPA_330ml,Retail Outlet,4,2.5,1.6,5.5,Yes,103,65.4,8.5,Quarantined,6224
+CC-0268,2024-03-17,North India,WH-MUM-01,Premium_Lager_330ml,Retail Outlet,6,4.1,1.7,5.0,Yes,65,84.4,17.6,Compliant,9338
+CC-0269,2024-08-06,North India,WH-MUM-01,Strong_Beer_500ml,Primary Warehouse,6,6.4,5.8,8.9,No,0,59.9,16.5,Compliant,0
+CC-0270,2024-03-11,East India,WH-HYD-01,Wheat_330ml,Brewery,2,3.8,1.8,4.3,No,0,56.4,2.4,Compliant,0
+CC-0271,2024-10-09,Central India,WH-BLR-01,Light_Beer_330ml,Primary Warehouse,8,9.3,8.8,11.6,No,0,68.7,11.9,Compliant,0
+CC-0272,2024-03-07,North India,WH-BLR-01,Light_Beer_330ml,Retail Outlet,2,4.2,3.5,6.3,Yes,107,74.0,13.7,Compliant,12713
+CC-0273,2024-02-25,Central India,WH-HYD-01,Stout_650ml,Brewery,8,6.4,4.5,7.4,Yes,76,63.6,1.4,Disposed,4939
+CC-0274,2024-01-31,West India,WH-KOL-01,Strong_Beer_500ml,Distributor,8,9.5,8.3,10.3,No,0,57.3,15.1,Compliant,0
+CC-0275,2024-02-27,North India,WH-BLR-01,IPA_330ml,Brewery,2,1.6,0.7,4.0,No,0,81.5,16.9,Compliant,0
+CC-0276,2024-09-24,West India,WH-KOL-01,Strong_Beer_500ml,Primary Warehouse,8,9.2,7.7,11.2,No,0,66.3,12.9,Compliant,0
+CC-0277,2024-02-01,East India,WH-DEL-01,Light_Beer_330ml,Retail Outlet,8,10.5,9.9,12.7,Yes,169,72.2,5.6,Quarantined,21810
+CC-0278,2024-09-18,South India,WH-KOL-01,IPA_330ml,Retail Outlet,2,2.2,-0.1,4.8,Yes,46,81.0,2.4,Compliant,4780
+CC-0279,2024-10-12,South India,WH-BLR-01,Wheat_330ml,Distributor,8,8.7,8.0,11.1,No,0,68.2,12.2,Compliant,0
+CC-0280,2024-01-20,East India,WH-MUM-01,Wheat_330ml,Regional Hub,2,-1.8,-2.5,0.1,Yes,66,83.8,16.4,Compliant,13175
+CC-0281,2024-01-25,Central India,WH-DEL-01,Light_Beer_330ml,Distributor,2,4.3,3.3,7.5,Yes,15,67.4,6.7,Quarantined,2111
+CC-0282,2024-04-22,West India,WH-BLR-01,Premium_Lager_330ml,Distributor,8,6.5,5.2,8.5,Yes,163,71.1,2.6,Disposed,8466
+CC-0283,2024-10-08,East India,WH-DEL-01,Premium_Lager_330ml,Regional Hub,8,9.6,8.4,12.5,Yes,61,63.8,5.7,Compliant,3808
+CC-0284,2024-10-01,South India,WH-HYD-01,Light_Beer_330ml,Brewery,4,4.4,2.7,6.4,No,0,79.1,5.9,Compliant,0
+CC-0285,2024-08-12,South India,WH-MUM-01,Stout_650ml,Retail Outlet,8,8.4,6.3,9.6,No,0,81.3,6.6,Compliant,0
+CC-0286,2024-07-20,Central India,WH-KOL-01,Premium_Lager_330ml,Distributor,4,6.2,5.2,7.7,No,0,84.6,14.6,Compliant,0
+CC-0287,2024-09-23,East India,WH-MUM-01,IPA_330ml,Brewery,8,10.8,9.1,13.5,Yes,78,84.8,15.8,Compliant,4634
+CC-0288,2024-12-01,North India,WH-DEL-01,Strong_Beer_500ml,Distributor,2,3.5,1.9,6.2,Yes,136,74.5,17.8,Compliant,17683
+CC-0289,2024-02-09,East India,WH-BLR-01,IPA_330ml,Regional Hub,8,7.2,5.5,10.1,Yes,154,77.4,1.2,Disposed,7946
+CC-0290,2024-09-22,North India,WH-BLR-01,Wheat_330ml,Brewery,8,5.3,3.5,6.2,Yes,149,73.5,5.1,Compliant,14894
+CC-0291,2024-09-03,Central India,WH-KOL-01,Premium_Lager_330ml,Distributor,6,8.0,7.4,9.9,No,0,71.8,3.9,Compliant,0
+CC-0292,2024-10-06,Central India,WH-MUM-01,Lager_500ml,Regional Hub,8,8.6,8.1,9.5,No,0,69.7,8.8,Compliant,0
+CC-0293,2024-06-04,West India,WH-BLR-01,Strong_Beer_500ml,Retail Outlet,6,8.9,6.8,11.8,Yes,113,82.7,5.4,Disposed,10523
+CC-0294,2024-11-02,East India,WH-BLR-01,Light_Beer_330ml,Primary Warehouse,4,2.6,0.5,3.7,Yes,31,69.0,8.3,Compliant,4456
+CC-0295,2024-06-03,West India,WH-DEL-01,IPA_330ml,Distributor,2,2.6,0.1,5.3,No,0,78.0,16.1,Compliant,0
+CC-0296,2024-12-19,West India,WH-KOL-01,IPA_330ml,Primary Warehouse,6,11.0,9.6,13.0,Yes,129,65.8,3.4,Disposed,16786
+CC-0297,2024-04-29,East India,WH-HYD-01,IPA_330ml,Regional Hub,8,5.9,3.6,7.3,Yes,160,58.9,11.6,Disposed,25934
+CC-0298,2024-08-04,Central India,WH-MUM-01,IPA_330ml,Retail Outlet,4,3.0,2.1,5.0,No,0,65.6,1.3,Compliant,0
+CC-0299,2024-07-31,North India,WH-HYD-01,Lager_500ml,Primary Warehouse,8,5.4,4.2,7.4,Yes,59,78.3,3.2,Disposed,7533
+CC-0300,2024-10-16,East India,WH-BLR-01,IPA_330ml,Distributor,8,10.4,9.4,13.1,Yes,152,59.5,14.5,Quarantined,20622
+CC-0301,2024-07-08,South India,WH-HYD-01,IPA_330ml,Regional Hub,4,6.1,5.0,9.2,Yes,83,81.6,4.7,Quarantined,9012
+CC-0302,2024-09-13,East India,WH-HYD-01,Light_Beer_330ml,Regional Hub,2,0.7,0.1,2.0,No,0,70.9,11.0,Compliant,0
+CC-0303,2024-10-27,East India,WH-HYD-01,Strong_Beer_500ml,Retail Outlet,2,4.7,2.3,7.9,Yes,79,57.8,8.3,Disposed,5930
+CC-0304,2024-05-02,West India,WH-DEL-01,Stout_650ml,Primary Warehouse,4,5.0,2.8,7.3,No,0,67.7,3.7,Compliant,0
+CC-0305,2024-08-16,Central India,WH-MUM-01,Light_Beer_330ml,Regional Hub,8,9.7,8.2,10.2,No,0,59.5,13.5,Compliant,0
+CC-0306,2024-06-21,East India,WH-KOL-01,Stout_650ml,Regional Hub,6,4.8,3.9,7.7,Yes,56,77.1,4.0,Quarantined,3116
+CC-0307,2024-05-16,Central India,WH-HYD-01,Lager_500ml,Primary Warehouse,6,8.3,6.2,9.3,No,0,77.2,3.1,Compliant,0
+CC-0308,2024-11-06,Central India,WH-MUM-01,Lager_500ml,Regional Hub,8,7.3,5.1,10.7,Yes,66,68.3,1.4,Disposed,11960
+CC-0309,2024-07-27,West India,WH-DEL-01,Strong_Beer_500ml,Primary Warehouse,8,8.0,7.0,9.2,No,0,62.3,4.2,Compliant,0
+CC-0310,2024-04-24,West India,WH-MUM-01,Premium_Lager_330ml,Brewery,6,7.4,5.8,8.1,No,0,78.9,7.4,Compliant,0
+CC-0311,2024-10-09,South India,WH-BLR-01,Premium_Lager_330ml,Retail Outlet,6,8.0,6.0,9.0,No,0,79.2,17.1,Compliant,0
+CC-0312,2024-09-01,East India,WH-HYD-01,Light_Beer_330ml,Distributor,6,3.5,1.6,4.7,Yes,72,83.4,2.1,Quarantined,12091
+CC-0313,2024-09-24,East India,WH-BLR-01,Wheat_330ml,Primary Warehouse,6,3.5,2.4,6.5,Yes,42,83.2,14.8,Disposed,7680
+CC-0314,2024-12-26,South India,WH-DEL-01,Light_Beer_330ml,Retail Outlet,6,4.1,3.0,5.1,Yes,138,79.1,7.4,Quarantined,15889
+CC-0315,2024-01-23,East India,WH-BLR-01,Wheat_330ml,Regional Hub,8,6.8,4.6,9.6,Yes,119,64.5,17.2,Compliant,17097
+CC-0316,2024-11-26,East India,WH-MUM-01,IPA_330ml,Brewery,2,4.0,2.3,6.3,Yes,133,70.2,16.5,Compliant,19261
+CC-0317,2024-12-05,East India,WH-DEL-01,Stout_650ml,Primary Warehouse,2,-2.1,-2.9,-0.6,Yes,60,56.7,15.0,Disposed,10400
+CC-0318,2024-11-20,Central India,WH-KOL-01,Strong_Beer_500ml,Retail Outlet,6,3.8,2.9,6.4,Yes,142,66.5,15.4,Quarantined,17992
+CC-0319,2024-08-26,North India,WH-DEL-01,Light_Beer_330ml,Distributor,2,4.6,2.6,5.9,No,0,55.7,12.6,Compliant,0
+CC-0320,2024-03-01,East India,WH-MUM-01,IPA_330ml,Retail Outlet,8,6.8,4.8,7.5,Yes,62,58.0,13.7,Quarantined,5626
+CC-0321,2024-05-19,Central India,WH-HYD-01,Strong_Beer_500ml,Brewery,8,6.1,3.9,9.3,Yes,27,59.0,17.1,Quarantined,4450
+CC-0322,2024-04-18,South India,WH-MUM-01,Premium_Lager_330ml,Primary Warehouse,6,9.4,7.9,10.0,No,0,65.9,15.9,Compliant,0
+CC-0323,2024-01-26,North India,WH-BLR-01,Strong_Beer_500ml,Regional Hub,2,0.3,-1.3,3.7,Yes,51,71.1,3.6,Compliant,6370
+CC-0324,2024-05-18,Central India,WH-MUM-01,Light_Beer_330ml,Regional Hub,2,4.2,3.5,5.1,No,0,76.7,9.6,Compliant,0
+CC-0325,2024-12-24,East India,WH-HYD-01,Lager_500ml,Regional Hub,4,4.1,3.3,6.0,No,0,72.4,5.5,Compliant,0
+CC-0326,2024-06-16,East India,WH-DEL-01,Stout_650ml,Regional Hub,4,6.0,3.6,7.3,No,0,71.7,8.4,Compliant,0
+CC-0327,2024-06-14,South India,WH-DEL-01,Light_Beer_330ml,Distributor,4,3.5,1.3,5.2,Yes,154,68.4,7.2,Compliant,12259
+CC-0328,2024-02-19,West India,WH-HYD-01,Light_Beer_330ml,Brewery,4,3.3,2.4,5.6,No,0,77.0,1.4,Compliant,0
+CC-0329,2024-02-16,East India,WH-BLR-01,Light_Beer_330ml,Primary Warehouse,8,8.4,7.4,10.9,No,0,73.3,12.4,Compliant,0
+CC-0330,2024-06-08,East India,WH-HYD-01,Wheat_330ml,Brewery,4,-0.6,-1.2,2.7,Yes,27,63.0,13.5,Quarantined,2753
+CC-0331,2024-09-01,South India,WH-MUM-01,Light_Beer_330ml,Primary Warehouse,4,5.0,3.0,8.2,Yes,109,68.2,6.2,Quarantined,21191
+CC-0332,2024-06-24,North India,WH-HYD-01,Stout_650ml,Regional Hub,2,1.8,1.1,2.6,No,0,58.9,17.6,Compliant,0
+CC-0333,2024-01-15,East India,WH-DEL-01,Light_Beer_330ml,Primary Warehouse,8,9.0,6.6,9.8,No,0,62.6,15.3,Compliant,0
+CC-0334,2024-08-18,South India,WH-KOL-01,Light_Beer_330ml,Regional Hub,4,8.1,7.5,10.7,Yes,125,75.1,3.1,Quarantined,14403
+CC-0335,2024-06-01,South India,WH-BLR-01,Stout_650ml,Brewery,8,8.0,7.2,10.7,No,0,61.1,3.1,Compliant,0
+CC-0336,2024-04-27,East India,WH-BLR-01,Stout_650ml,Brewery,8,9.5,8.1,12.8,Yes,94,81.6,8.5,Compliant,11911
+CC-0337,2024-01-20,North India,WH-BLR-01,Wheat_330ml,Distributor,6,4.8,3.0,5.7,Yes,38,65.5,4.5,Compliant,6294
+CC-0338,2024-09-16,South India,WH-HYD-01,Wheat_330ml,Primary Warehouse,4,1.2,0.2,4.4,Yes,144,81.0,5.4,Disposed,10723
+CC-0339,2024-06-27,South India,WH-MUM-01,Stout_650ml,Distributor,2,2.8,0.9,5.2,No,0,63.1,5.2,Compliant,0
+CC-0340,2024-07-05,Central India,WH-HYD-01,Light_Beer_330ml,Brewery,8,5.7,4.7,7.6,Yes,19,71.7,17.5,Disposed,1365
+CC-0341,2024-04-20,West India,WH-BLR-01,Premium_Lager_330ml,Brewery,6,5.1,4.4,5.8,No,0,70.0,14.9,Compliant,0
+CC-0342,2024-11-01,North India,WH-HYD-01,Stout_650ml,Primary Warehouse,4,3.7,2.9,4.5,No,0,65.7,12.8,Compliant,0
+CC-0343,2024-08-22,South India,WH-HYD-01,Wheat_330ml,Brewery,8,6.5,5.5,9.0,Yes,48,60.5,15.0,Disposed,5897
+CC-0344,2024-12-29,Central India,WH-BLR-01,Lager_500ml,Primary Warehouse,8,9.6,8.5,12.6,Yes,60,70.0,7.0,Disposed,9847
+CC-0345,2024-12-05,North India,WH-MUM-01,Strong_Beer_500ml,Retail Outlet,4,5.8,4.3,7.1,No,0,77.6,1.7,Compliant,0
+CC-0346,2024-03-13,East India,WH-KOL-01,IPA_330ml,Distributor,8,8.0,5.7,10.6,Yes,136,80.9,5.2,Compliant,25174
+CC-0347,2024-05-26,Central India,WH-MUM-01,Premium_Lager_330ml,Distributor,8,7.9,6.4,10.5,No,0,68.1,1.1,Compliant,0
+CC-0348,2024-04-02,West India,WH-DEL-01,Wheat_330ml,Retail Outlet,4,-0.1,-2.3,2.6,Yes,105,75.0,6.5,Compliant,6242
+CC-0349,2024-08-24,East India,WH-HYD-01,Lager_500ml,Brewery,6,4.4,2.8,7.2,Yes,33,70.1,13.1,Quarantined,6159
+CC-0350,2024-12-10,Central India,WH-HYD-01,Light_Beer_330ml,Distributor,2,2.4,1.0,5.3,No,0,79.9,11.7,Compliant,0
+CC-0351,2024-07-13,Central India,WH-KOL-01,Wheat_330ml,Brewery,6,8.8,8.1,10.1,Yes,54,73.7,8.9,Disposed,7148
+CC-0352,2024-11-03,East India,WH-DEL-01,Light_Beer_330ml,Primary Warehouse,2,0.6,-0.2,2.9,Yes,61,66.6,1.2,Compliant,12068
+CC-0353,2024-07-10,East India,WH-DEL-01,Light_Beer_330ml,Brewery,2,2.7,1.3,3.3,No,0,61.0,13.8,Compliant,0
+CC-0354,2024-10-20,South India,WH-HYD-01,Strong_Beer_500ml,Regional Hub,4,4.2,3.4,4.9,No,0,57.6,2.3,Compliant,0
+CC-0355,2024-11-12,North India,WH-KOL-01,Premium_Lager_330ml,Distributor,4,4.4,3.7,5.3,No,0,58.5,14.3,Compliant,0
+CC-0356,2024-06-22,North India,WH-DEL-01,Strong_Beer_500ml,Regional Hub,8,7.9,6.8,10.7,No,0,68.0,17.2,Compliant,0
+CC-0357,2024-11-08,East India,WH-MUM-01,Stout_650ml,Distributor,6,6.3,4.3,9.8,No,0,65.7,7.9,Compliant,0
+CC-0358,2024-09-19,Central India,WH-HYD-01,Premium_Lager_330ml,Regional Hub,2,2.6,2.1,4.4,No,0,76.8,10.0,Compliant,0
+CC-0359,2024-06-26,Central India,WH-HYD-01,Stout_650ml,Retail Outlet,4,5.6,3.4,8.9,Yes,133,65.4,16.4,Compliant,21998
+CC-0360,2024-10-02,South India,WH-KOL-01,Wheat_330ml,Distributor,8,6.2,4.3,8.5,Yes,111,82.1,10.4,Compliant,8918
+CC-0361,2024-12-02,East India,WH-BLR-01,Premium_Lager_330ml,Brewery,4,3.6,2.5,6.3,No,0,84.4,4.2,Compliant,0
+CC-0362,2024-05-26,Central India,WH-BLR-01,Premium_Lager_330ml,Primary Warehouse,8,7.5,6.4,9.8,No,0,72.6,3.4,Compliant,0
+CC-0363,2024-05-24,West India,WH-BLR-01,Wheat_330ml,Regional Hub,2,-0.6,-2.2,0.6,Yes,144,79.0,13.7,Quarantined,16512
+CC-0364,2024-02-21,South India,WH-KOL-01,IPA_330ml,Primary Warehouse,8,6.3,4.8,8.7,Yes,88,66.0,1.1,Quarantined,4405
+CC-0365,2024-08-16,West India,WH-BLR-01,Light_Beer_330ml,Retail Outlet,4,5.0,3.2,6.5,No,0,83.5,10.7,Compliant,0
+CC-0366,2024-02-09,East India,WH-BLR-01,IPA_330ml,Primary Warehouse,6,5.2,4.3,8.4,No,0,62.3,14.5,Compliant,0
+CC-0367,2024-04-15,Central India,WH-DEL-01,Strong_Beer_500ml,Primary Warehouse,2,5.1,3.8,7.0,Yes,20,55.9,16.1,Quarantined,3338
+CC-0368,2024-12-03,South India,WH-HYD-01,Lager_500ml,Retail Outlet,4,5.8,4.1,8.9,Yes,169,73.3,13.8,Quarantined,13984
+CC-0369,2024-04-22,West India,WH-BLR-01,Strong_Beer_500ml,Brewery,2,0.0,-1.2,1.9,Yes,106,64.3,6.8,Compliant,9861
+CC-0370,2024-05-06,South India,WH-DEL-01,Strong_Beer_500ml,Distributor,8,9.6,7.4,10.1,No,0,55.0,10.8,Compliant,0
+CC-0371,2024-08-01,East India,WH-KOL-01,Stout_650ml,Retail Outlet,6,7.6,6.0,10.1,Yes,150,60.8,12.7,Quarantined,15799
+CC-0372,2024-05-03,Central India,WH-KOL-01,IPA_330ml,Retail Outlet,6,5.5,3.5,8.9,Yes,113,79.8,17.6,Disposed,21581
+CC-0373,2024-06-18,East India,WH-HYD-01,Light_Beer_330ml,Brewery,2,2.3,1.7,4.8,No,0,76.4,3.2,Compliant,0
+CC-0374,2024-03-15,East India,WH-MUM-01,Wheat_330ml,Retail Outlet,6,9.3,8.4,10.7,Yes,56,84.2,13.7,Quarantined,10618
+CC-0375,2024-10-23,North India,WH-HYD-01,Stout_650ml,Retail Outlet,8,11.1,9.9,13.4,Yes,51,56.4,14.4,Disposed,3865
+CC-0376,2024-02-02,South India,WH-DEL-01,Wheat_330ml,Brewery,4,8.6,6.8,11.1,Yes,37,61.8,4.4,Quarantined,4694
+CC-0377,2024-05-05,East India,WH-MUM-01,Premium_Lager_330ml,Retail Outlet,2,4.3,2.7,5.1,No,0,81.1,16.8,Compliant,0
+CC-0378,2024-12-18,North India,WH-KOL-01,IPA_330ml,Primary Warehouse,4,2.2,0.1,3.9,Yes,142,83.1,7.5,Disposed,13474
+CC-0379,2024-11-12,South India,WH-BLR-01,Premium_Lager_330ml,Regional Hub,8,6.6,4.8,9.0,Yes,145,70.2,10.8,Quarantined,26424
+CC-0380,2024-10-29,East India,WH-BLR-01,Stout_650ml,Primary Warehouse,6,5.9,5.3,8.5,No,0,61.0,5.9,Compliant,0
+CC-0381,2024-09-13,North India,WH-BLR-01,Wheat_330ml,Brewery,8,8.9,7.6,9.7,No,0,62.7,9.0,Compliant,0
+CC-0382,2024-06-25,Central India,WH-HYD-01,Lager_500ml,Distributor,4,6.4,5.6,8.0,No,0,61.4,5.5,Compliant,0
+CC-0383,2024-12-10,South India,WH-MUM-01,Strong_Beer_500ml,Brewery,8,9.8,8.3,12.6,Yes,152,83.6,3.6,Quarantined,21157
+CC-0384,2024-04-26,West India,WH-MUM-01,Light_Beer_330ml,Primary Warehouse,4,5.1,3.8,8.2,Yes,90,64.9,7.9,Quarantined,15267
+CC-0385,2024-04-01,Central India,WH-MUM-01,Stout_650ml,Regional Hub,2,5.1,3.2,6.7,Yes,89,65.3,2.2,Compliant,10722
+CC-0386,2024-06-10,West India,WH-BLR-01,Stout_650ml,Primary Warehouse,6,5.3,3.8,8.1,Yes,133,55.3,4.9,Quarantined,24856
+CC-0387,2024-11-10,Central India,WH-BLR-01,Premium_Lager_330ml,Brewery,2,4.7,2.3,8.1,Yes,154,80.1,12.7,Compliant,20910
+CC-0388,2024-07-29,Central India,WH-MUM-01,IPA_330ml,Brewery,4,7.7,6.0,10.2,Yes,143,57.1,9.7,Quarantined,7375
+CC-0389,2024-01-27,West India,WH-DEL-01,Premium_Lager_330ml,Retail Outlet,6,6.9,5.4,9.8,No,0,57.4,10.5,Compliant,0
+CC-0390,2024-07-15,East India,WH-DEL-01,Premium_Lager_330ml,Regional Hub,4,4.8,4.3,6.3,No,0,61.0,15.1,Compliant,0
+CC-0391,2024-12-10,Central India,WH-HYD-01,Light_Beer_330ml,Distributor,4,6.3,5.4,7.8,No,0,65.3,14.8,Compliant,0
+CC-0392,2024-06-10,West India,WH-MUM-01,Premium_Lager_330ml,Brewery,8,7.4,6.7,8.1,No,0,56.6,8.0,Compliant,0
+CC-0393,2024-08-27,East India,WH-KOL-01,Premium_Lager_330ml,Primary Warehouse,8,7.4,5.9,10.7,Yes,16,66.4,12.7,Disposed,1069
+CC-0394,2024-04-18,West India,WH-BLR-01,Strong_Beer_500ml,Regional Hub,2,4.8,3.4,8.1,Yes,116,80.0,3.5,Compliant,11339
+CC-0395,2024-03-22,Central India,WH-HYD-01,Light_Beer_330ml,Distributor,2,3.3,1.4,6.1,Yes,125,75.5,3.7,Compliant,13885
+CC-0396,2024-05-25,North India,WH-HYD-01,Strong_Beer_500ml,Distributor,2,3.6,2.6,5.5,No,0,78.6,12.1,Compliant,0
+CC-0397,2024-01-05,Central India,WH-MUM-01,Premium_Lager_330ml,Primary Warehouse,4,2.0,1.0,2.9,Yes,115,83.8,12.6,Disposed,21410
+CC-0398,2024-03-03,Central India,WH-MUM-01,Lager_500ml,Brewery,2,-1.2,-2.1,1.0,Yes,51,73.2,4.8,Compliant,8764
+CC-0399,2024-06-27,North India,WH-DEL-01,IPA_330ml,Brewery,2,2.3,0.2,4.2,No,0,61.8,1.0,Compliant,0
+CC-0400,2024-03-25,South India,WH-DEL-01,Premium_Lager_330ml,Retail Outlet,4,3.9,2.8,5.5,No,0,57.2,5.2,Compliant,0
+CC-0401,2024-07-03,North India,WH-MUM-01,Strong_Beer_500ml,Primary Warehouse,6,4.1,3.2,6.2,Yes,126,70.3,13.4,Compliant,6335
+CC-0402,2024-03-28,Central India,WH-DEL-01,Strong_Beer_500ml,Brewery,6,5.4,3.9,7.0,Yes,87,73.4,3.9,Disposed,11090
+CC-0403,2024-02-06,North India,WH-DEL-01,IPA_330ml,Retail Outlet,2,2.9,0.5,4.8,No,0,70.6,8.1,Compliant,0
+CC-0404,2024-12-07,South India,WH-MUM-01,Strong_Beer_500ml,Distributor,6,8.2,5.8,9.7,No,0,64.8,15.5,Compliant,0
+CC-0405,2024-10-27,North India,WH-HYD-01,Wheat_330ml,Regional Hub,8,8.4,6.9,10.5,No,0,76.6,6.0,Compliant,0
+CC-0406,2024-03-09,South India,WH-HYD-01,Stout_650ml,Regional Hub,2,4.6,2.6,5.6,No,0,61.8,8.9,Compliant,0
+CC-0407,2024-09-08,West India,WH-HYD-01,Lager_500ml,Distributor,8,11.8,9.6,14.7,Yes,85,70.7,6.6,Quarantined,12824
+CC-0408,2024-11-23,West India,WH-BLR-01,Wheat_330ml,Retail Outlet,4,1.7,-0.6,3.3,Yes,93,75.4,15.0,Compliant,9409
+CC-0409,2024-09-29,South India,WH-KOL-01,Light_Beer_330ml,Distributor,8,10.8,8.6,11.7,No,0,76.7,10.7,Compliant,0
+CC-0410,2024-11-15,East India,WH-MUM-01,Stout_650ml,Primary Warehouse,4,2.4,0.2,5.1,Yes,122,77.8,10.2,Disposed,8598
+CC-0411,2024-08-12,South India,WH-DEL-01,IPA_330ml,Primary Warehouse,6,4.0,2.1,6.9,Yes,146,73.9,1.8,Quarantined,11171
+CC-0412,2024-11-08,South India,WH-DEL-01,IPA_330ml,Distributor,2,0.0,-0.5,1.6,Yes,52,68.7,2.4,Quarantined,8695
+CC-0413,2024-10-26,North India,WH-BLR-01,Lager_500ml,Retail Outlet,6,4.1,1.9,6.5,Yes,177,58.3,12.9,Compliant,22689
+CC-0414,2024-11-10,South India,WH-KOL-01,Premium_Lager_330ml,Brewery,4,3.9,3.1,7.1,No,0,74.1,7.4,Compliant,0
+CC-0415,2024-10-24,Central India,WH-MUM-01,Strong_Beer_500ml,Distributor,4,4.9,4.3,6.0,No,0,69.1,16.3,Compliant,0
+CC-0416,2024-03-04,East India,WH-BLR-01,Premium_Lager_330ml,Regional Hub,8,7.1,5.3,10.0,Yes,26,68.8,5.0,Compliant,1928
+CC-0417,2024-04-26,Central India,WH-BLR-01,Stout_650ml,Brewery,6,4.1,3.1,5.3,Yes,131,74.8,6.6,Quarantined,12272
+CC-0418,2024-06-09,South India,WH-MUM-01,IPA_330ml,Primary Warehouse,4,6.8,6.0,7.3,No,0,70.0,2.8,Compliant,0
+CC-0419,2024-09-26,West India,WH-KOL-01,Lager_500ml,Brewery,4,6.7,5.0,7.8,No,0,66.0,15.0,Compliant,0
+CC-0420,2024-01-10,North India,WH-DEL-01,Strong_Beer_500ml,Primary Warehouse,6,9.0,7.1,11.6,Yes,48,64.2,14.2,Quarantined,8526
+CC-0421,2024-01-07,South India,WH-DEL-01,Strong_Beer_500ml,Retail Outlet,4,5.3,3.3,8.2,Yes,78,80.7,6.2,Quarantined,4980
+CC-0422,2024-12-18,Central India,WH-HYD-01,Lager_500ml,Retail Outlet,8,9.7,8.4,12.8,Yes,134,63.0,2.7,Disposed,18112
+CC-0423,2024-01-08,South India,WH-BLR-01,Lager_500ml,Primary Warehouse,2,3.4,2.6,6.7,Yes,57,82.2,16.9,Quarantined,3305
+CC-0424,2024-03-06,Central India,WH-HYD-01,Wheat_330ml,Regional Hub,2,3.9,3.3,5.9,No,0,67.8,13.9,Compliant,0
+CC-0425,2024-02-09,East India,WH-BLR-01,Wheat_330ml,Retail Outlet,6,8.4,6.7,11.4,Yes,117,80.2,5.1,Compliant,8127
+CC-0426,2024-01-17,West India,WH-BLR-01,Wheat_330ml,Primary Warehouse,4,4.7,3.6,6.3,No,0,74.1,10.2,Compliant,0
+CC-0427,2024-06-23,South India,WH-HYD-01,IPA_330ml,Distributor,8,8.6,6.7,11.2,No,0,83.0,4.9,Compliant,0
+CC-0428,2024-11-02,North India,WH-DEL-01,Lager_500ml,Distributor,6,10.1,9.0,12.9,Yes,76,84.3,4.6,Disposed,14582
+CC-0429,2024-05-11,West India,WH-MUM-01,Light_Beer_330ml,Primary Warehouse,8,5.7,3.5,6.7,Yes,75,58.4,13.7,Quarantined,5906
+CC-0430,2024-10-31,Central India,WH-BLR-01,Lager_500ml,Primary Warehouse,2,2.5,1.2,3.9,No,0,64.5,15.7,Compliant,0
+CC-0431,2024-08-21,South India,WH-MUM-01,Lager_500ml,Regional Hub,8,5.9,3.4,7.1,Yes,122,66.5,10.3,Compliant,9926
+CC-0432,2024-12-21,South India,WH-MUM-01,Wheat_330ml,Distributor,6,6.8,5.6,9.4,No,0,70.9,1.9,Compliant,0
+CC-0433,2024-04-21,North India,WH-BLR-01,Light_Beer_330ml,Brewery,4,3.7,1.3,6.9,Yes,98,77.6,1.9,Quarantined,12155
+CC-0434,2024-08-24,East India,WH-HYD-01,Wheat_330ml,Regional Hub,8,9.3,6.9,10.1,No,0,67.7,10.2,Compliant,0
+CC-0435,2024-05-14,South India,WH-HYD-01,Premium_Lager_330ml,Primary Warehouse,8,9.1,7.4,11.5,No,0,63.3,8.4,Compliant,0
+CC-0436,2024-03-01,North India,WH-HYD-01,IPA_330ml,Regional Hub,8,8.0,7.2,10.9,No,0,75.9,15.0,Compliant,0
+CC-0437,2024-11-27,North India,WH-MUM-01,IPA_330ml,Retail Outlet,8,7.4,6.3,10.4,No,0,76.0,4.1,Compliant,0
+CC-0438,2024-01-14,Central India,WH-HYD-01,Lager_500ml,Primary Warehouse,4,5.3,4.7,6.6,No,0,81.5,15.7,Compliant,0
+CC-0439,2024-05-28,East India,WH-KOL-01,IPA_330ml,Retail Outlet,2,5.2,3.2,7.2,Yes,134,67.9,12.6,Compliant,10127
+CC-0440,2024-01-17,South India,WH-MUM-01,Stout_650ml,Regional Hub,6,8.3,7.1,9.9,No,0,65.2,9.8,Compliant,0
+CC-0441,2024-05-29,North India,WH-HYD-01,Stout_650ml,Regional Hub,2,3.7,2.9,6.0,No,0,80.3,4.7,Compliant,0
+CC-0442,2024-08-31,Central India,WH-BLR-01,Wheat_330ml,Distributor,8,11.5,10.5,14.0,Yes,137,80.8,9.7,Quarantined,13349
+CC-0443,2024-12-10,North India,WH-KOL-01,Lager_500ml,Brewery,4,6.6,5.9,8.7,Yes,99,71.0,12.2,Disposed,11891
+CC-0444,2024-01-10,Central India,WH-MUM-01,Strong_Beer_500ml,Brewery,2,2.8,0.6,3.8,No,0,71.2,17.5,Compliant,0
+CC-0445,2024-05-14,East India,WH-DEL-01,Stout_650ml,Primary Warehouse,8,7.2,5.2,10.7,Yes,90,78.7,9.9,Compliant,11348
+CC-0446,2024-02-12,East India,WH-MUM-01,Premium_Lager_330ml,Distributor,8,7.3,4.9,9.8,Yes,73,70.9,2.7,Quarantined,4686
+CC-0447,2024-08-08,South India,WH-MUM-01,Lager_500ml,Retail Outlet,8,7.8,5.9,8.4,Yes,108,61.8,6.5,Quarantined,12184
+CC-0448,2024-02-27,North India,WH-MUM-01,Strong_Beer_500ml,Distributor,4,3.9,3.0,5.3,No,0,75.0,1.7,Compliant,0
+CC-0449,2024-10-02,Central India,WH-HYD-01,Wheat_330ml,Brewery,4,0.5,-0.0,2.3,Yes,170,61.7,2.3,Compliant,17852
+CC-0450,2024-04-04,East India,WH-HYD-01,Premium_Lager_330ml,Distributor,2,2.8,1.8,5.0,No,0,67.8,1.4,Compliant,0
+CC-0451,2024-11-07,East India,WH-HYD-01,IPA_330ml,Retail Outlet,6,5.5,3.2,8.0,Yes,161,66.4,13.8,Compliant,19728
+CC-0452,2024-10-13,Central India,WH-BLR-01,Lager_500ml,Distributor,2,2.4,1.3,4.4,No,0,55.3,11.7,Compliant,0
+CC-0453,2024-01-15,East India,WH-HYD-01,Strong_Beer_500ml,Regional Hub,8,8.8,8.1,9.9,No,0,73.9,10.1,Compliant,0
+CC-0454,2024-12-29,Central India,WH-MUM-01,Premium_Lager_330ml,Primary Warehouse,2,1.4,-0.4,4.1,Yes,44,72.7,4.8,Disposed,8484
+CC-0455,2024-11-21,North India,WH-MUM-01,Wheat_330ml,Regional Hub,2,1.3,-0.1,2.1,Yes,90,74.0,12.3,Disposed,6682
+CC-0456,2024-02-13,North India,WH-MUM-01,Lager_500ml,Brewery,8,6.6,4.4,8.6,Yes,56,67.0,14.3,Compliant,7557
+CC-0457,2024-12-16,Central India,WH-HYD-01,Premium_Lager_330ml,Regional Hub,2,5.4,4.2,6.4,Yes,81,77.4,8.9,Disposed,7048
+CC-0458,2024-08-25,Central India,WH-BLR-01,Premium_Lager_330ml,Brewery,2,2.1,-0.2,2.9,Yes,55,62.2,2.1,Disposed,10600
+CC-0459,2024-04-13,Central India,WH-KOL-01,Strong_Beer_500ml,Retail Outlet,2,2.0,0.1,4.9,No,0,79.4,3.4,Compliant,0
+CC-0460,2024-08-18,West India,WH-MUM-01,Lager_500ml,Primary Warehouse,8,10.4,9.7,11.0,No,0,65.5,7.9,Compliant,0
+CC-0461,2024-07-01,North India,WH-KOL-01,Lager_500ml,Brewery,2,4.1,2.7,7.4,Yes,153,61.1,17.4,Disposed,25773
+CC-0462,2024-12-28,East India,WH-BLR-01,Premium_Lager_330ml,Brewery,6,6.8,5.5,8.8,No,0,82.9,2.9,Compliant,0
+CC-0463,2024-01-21,East India,WH-DEL-01,Light_Beer_330ml,Primary Warehouse,2,4.1,2.4,5.4,No,0,66.5,5.0,Compliant,0
+CC-0464,2024-04-02,North India,WH-MUM-01,Premium_Lager_330ml,Regional Hub,8,9.8,7.6,12.0,No,0,60.2,4.9,Compliant,0
+CC-0465,2024-07-03,Central India,WH-KOL-01,Strong_Beer_500ml,Retail Outlet,2,4.4,2.6,6.7,Yes,70,82.8,9.5,Compliant,13757
+CC-0466,2024-07-15,Central India,WH-DEL-01,Lager_500ml,Primary Warehouse,2,1.1,-0.7,4.3,Yes,172,83.5,2.3,Disposed,18466
+CC-0467,2024-06-17,West India,WH-HYD-01,Light_Beer_330ml,Retail Outlet,4,3.1,0.9,5.2,Yes,163,81.6,4.5,Disposed,26765
+CC-0468,2024-09-28,Central India,WH-MUM-01,Wheat_330ml,Regional Hub,4,2.1,1.0,3.0,Yes,113,71.6,17.8,Compliant,6360
+CC-0469,2024-07-09,North India,WH-HYD-01,Premium_Lager_330ml,Distributor,6,6.5,5.1,7.1,No,0,76.9,8.3,Compliant,0
+CC-0470,2024-08-25,North India,WH-DEL-01,Wheat_330ml,Brewery,4,3.0,1.6,5.6,Yes,130,84.8,2.5,Disposed,17249
+CC-0471,2024-06-10,West India,WH-KOL-01,IPA_330ml,Primary Warehouse,6,5.8,4.8,8.5,No,0,70.3,7.0,Compliant,0
+CC-0472,2024-07-03,South India,WH-DEL-01,IPA_330ml,Retail Outlet,6,9.3,8.3,10.7,Yes,70,60.8,4.1,Compliant,4901
+CC-0473,2024-05-13,Central India,WH-KOL-01,IPA_330ml,Primary Warehouse,6,2.6,0.7,4.5,Yes,127,80.5,4.6,Compliant,7883
+CC-0474,2024-10-19,East India,WH-BLR-01,Lager_500ml,Retail Outlet,8,6.7,5.4,8.5,Yes,54,83.5,7.5,Quarantined,6541
+CC-0475,2024-02-18,East India,WH-HYD-01,Light_Beer_330ml,Distributor,8,9.2,6.9,10.6,No,0,80.4,3.8,Compliant,0
+CC-0476,2024-05-01,West India,WH-HYD-01,Premium_Lager_330ml,Primary Warehouse,8,8.9,7.8,9.9,No,0,77.0,5.1,Compliant,0
+CC-0477,2024-07-06,West India,WH-DEL-01,IPA_330ml,Regional Hub,2,-0.5,-2.4,1.8,Yes,98,73.0,5.1,Disposed,10930
+CC-0478,2024-06-06,East India,WH-DEL-01,IPA_330ml,Primary Warehouse,2,1.4,-0.9,2.4,Yes,55,78.8,13.2,Quarantined,9780
+CC-0479,2024-01-07,North India,WH-DEL-01,Premium_Lager_330ml,Distributor,8,8.3,6.5,11.0,No,0,71.0,2.1,Compliant,0
+CC-0480,2024-03-22,South India,WH-KOL-01,Light_Beer_330ml,Distributor,2,3.3,2.0,6.0,No,0,81.8,16.7,Compliant,0
+CC-0481,2024-03-19,South India,WH-DEL-01,Lager_500ml,Primary Warehouse,2,2.4,0.1,2.9,No,0,78.5,1.8,Compliant,0
+CC-0482,2024-08-03,West India,WH-HYD-01,Light_Beer_330ml,Primary Warehouse,6,4.4,2.5,7.5,Yes,72,56.2,9.2,Disposed,5357
+CC-0483,2024-07-29,Central India,WH-MUM-01,Wheat_330ml,Brewery,4,5.1,4.0,8.1,Yes,123,68.1,10.4,Quarantined,17607
+CC-0484,2024-05-17,South India,WH-BLR-01,Light_Beer_330ml,Distributor,8,10.8,9.4,11.8,No,0,57.3,15.6,Compliant,0
+CC-0485,2024-10-16,South India,WH-DEL-01,IPA_330ml,Regional Hub,8,10.0,9.5,13.5,Yes,174,80.9,1.6,Disposed,29303
+CC-0486,2024-09-22,Central India,WH-KOL-01,Lager_500ml,Regional Hub,4,3.4,1.3,4.9,Yes,32,75.8,6.5,Disposed,3903
+CC-0487,2024-10-16,East India,WH-MUM-01,Stout_650ml,Regional Hub,8,6.5,5.9,9.9,Yes,180,74.4,15.0,Compliant,16386
+CC-0488,2024-09-26,West India,WH-BLR-01,Strong_Beer_500ml,Primary Warehouse,6,8.5,6.3,10.9,Yes,66,65.9,6.7,Compliant,5299
+CC-0489,2024-09-19,West India,WH-HYD-01,Stout_650ml,Primary Warehouse,2,3.4,2.3,6.7,Yes,97,78.7,14.0,Compliant,9224
+CC-0490,2024-09-13,South India,WH-MUM-01,Light_Beer_330ml,Regional Hub,2,2.6,1.4,4.2,No,0,79.7,12.0,Compliant,0
+CC-0491,2024-02-01,West India,WH-KOL-01,IPA_330ml,Retail Outlet,8,9.4,7.6,10.8,No,0,78.4,16.3,Compliant,0
+CC-0492,2024-10-22,North India,WH-DEL-01,Light_Beer_330ml,Primary Warehouse,2,3.9,2.2,5.3,No,0,61.0,7.9,Compliant,0
+CC-0493,2024-11-12,West India,WH-HYD-01,Strong_Beer_500ml,Brewery,8,8.0,6.0,10.3,No,0,57.5,5.3,Compliant,0
+CC-0494,2024-10-31,Central India,WH-BLR-01,Light_Beer_330ml,Primary Warehouse,8,10.1,9.5,12.8,Yes,64,55.5,14.5,Disposed,8633
+CC-0495,2024-07-03,South India,WH-HYD-01,Lager_500ml,Distributor,6,6.6,5.9,10.0,No,0,74.1,12.7,Compliant,0
+CC-0496,2024-01-02,Central India,WH-BLR-01,Lager_500ml,Retail Outlet,4,6.4,4.1,9.1,Yes,118,55.6,10.1,Disposed,18304
+CC-0497,2024-08-20,West India,WH-BLR-01,Light_Beer_330ml,Regional Hub,8,12.4,10.5,13.0,Yes,104,72.8,12.2,Disposed,7000
+CC-0498,2024-03-11,East India,WH-HYD-01,Premium_Lager_330ml,Retail Outlet,8,9.1,7.8,10.7,No,0,70.2,11.9,Compliant,0
+CC-0499,2024-09-13,South India,WH-MUM-01,Strong_Beer_500ml,Brewery,4,4.2,2.0,6.7,No,0,77.2,2.3,Compliant,0
+CC-0500,2024-08-20,West India,WH-MUM-01,Lager_500ml,Regional Hub,2,2.7,1.6,3.4,No,0,80.9,15.5,Compliant,0
+CC-0501,2024-01-18,North India,WH-DEL-01,Wheat_330ml,Distributor,6,6.7,5.8,9.4,No,0,82.4,8.8,Compliant,0
+CC-0502,2024-02-27,West India,WH-BLR-01,Strong_Beer_500ml,Primary Warehouse,6,4.5,3.9,5.1,Yes,170,83.9,4.2,Compliant,24753
+CC-0503,2024-01-18,West India,WH-BLR-01,Lager_500ml,Regional Hub,4,1.1,-1.1,2.9,Yes,76,55.5,5.3,Compliant,5249
+CC-0504,2024-06-29,East India,WH-BLR-01,Wheat_330ml,Regional Hub,8,3.2,1.0,5.9,Yes,101,70.2,8.3,Disposed,15067
+CC-0505,2024-05-12,Central India,WH-KOL-01,IPA_330ml,Retail Outlet,8,8.6,7.1,11.1,No,0,57.9,4.2,Compliant,0
+CC-0506,2024-09-27,Central India,WH-HYD-01,Strong_Beer_500ml,Brewery,6,5.5,3.8,7.8,Yes,120,55.6,4.1,Disposed,9521
+CC-0507,2024-08-21,North India,WH-BLR-01,Premium_Lager_330ml,Brewery,8,6.7,5.0,9.1,Yes,167,63.8,17.0,Disposed,24514
+CC-0508,2024-03-05,Central India,WH-MUM-01,Stout_650ml,Regional Hub,2,4.2,3.2,5.8,No,0,78.4,7.2,Compliant,0
+CC-0509,2024-01-19,Central India,WH-KOL-01,Lager_500ml,Distributor,8,4.9,4.3,5.6,Yes,140,76.7,3.9,Compliant,27727
+CC-0510,2024-08-25,East India,WH-MUM-01,Light_Beer_330ml,Brewery,2,2.4,1.5,5.9,No,0,84.9,14.9,Compliant,0
+CC-0511,2024-09-04,Central India,WH-DEL-01,Wheat_330ml,Regional Hub,2,4.5,3.9,5.9,No,0,57.4,14.0,Compliant,0
+CC-0512,2024-08-28,North India,WH-DEL-01,Stout_650ml,Brewery,4,2.8,0.8,6.2,Yes,40,83.8,7.4,Disposed,6052
+CC-0513,2024-06-02,South India,WH-KOL-01,Premium_Lager_330ml,Distributor,4,4.1,3.4,6.3,No,0,74.1,7.4,Compliant,0
+CC-0514,2024-08-18,North India,WH-HYD-01,Premium_Lager_330ml,Retail Outlet,2,1.3,-0.2,3.6,Yes,65,64.5,17.6,Compliant,8831
+CC-0515,2024-08-25,Central India,WH-DEL-01,Lager_500ml,Brewery,4,1.8,0.6,4.0,Yes,34,68.5,9.6,Compliant,5163
+CC-0516,2024-07-24,East India,WH-KOL-01,Premium_Lager_330ml,Retail Outlet,4,3.9,2.7,5.9,No,0,66.3,17.8,Compliant,0
+CC-0517,2024-03-05,South India,WH-BLR-01,IPA_330ml,Primary Warehouse,4,3.0,1.4,4.0,Yes,47,76.9,6.3,Compliant,5476
+CC-0518,2024-04-01,Central India,WH-KOL-01,IPA_330ml,Brewery,2,3.2,0.8,5.8,No,0,76.5,5.0,Compliant,0
+CC-0519,2024-10-25,Central India,WH-HYD-01,Strong_Beer_500ml,Primary Warehouse,2,3.1,2.5,6.1,Yes,88,80.3,6.1,Compliant,14846
+CC-0520,2024-09-07,East India,WH-KOL-01,Strong_Beer_500ml,Distributor,4,6.0,4.0,9.0,Yes,121,68.5,13.8,Disposed,9966
+CC-0521,2024-12-15,North India,WH-MUM-01,Stout_650ml,Primary Warehouse,2,4.9,3.3,7.6,Yes,25,68.8,1.2,Disposed,3806
+CC-0522,2024-11-04,South India,WH-MUM-01,IPA_330ml,Retail Outlet,6,3.8,2.2,4.9,Yes,18,80.1,5.6,Quarantined,2557
+CC-0523,2024-04-25,Central India,WH-DEL-01,Wheat_330ml,Brewery,6,5.3,3.6,7.4,Yes,60,68.7,4.2,Compliant,8177
+CC-0524,2024-03-03,Central India,WH-BLR-01,Light_Beer_330ml,Brewery,8,7.3,5.0,8.6,Yes,167,82.2,14.6,Compliant,8507
+CC-0525,2024-09-22,East India,WH-BLR-01,Strong_Beer_500ml,Distributor,2,1.1,-0.1,2.6,Yes,157,57.6,8.5,Quarantined,22849
+CC-0526,2024-10-04,South India,WH-BLR-01,Strong_Beer_500ml,Distributor,6,6.4,5.1,9.3,No,0,55.5,5.1,Compliant,0
+CC-0527,2024-11-16,South India,WH-DEL-01,Premium_Lager_330ml,Regional Hub,8,8.1,7.5,10.2,No,0,59.2,1.5,Compliant,0
+CC-0528,2024-12-11,East India,WH-KOL-01,Strong_Beer_500ml,Primary Warehouse,2,2.9,1.0,3.8,No,0,82.3,2.0,Compliant,0
+CC-0529,2024-04-16,Central India,WH-MUM-01,Stout_650ml,Retail Outlet,6,6.2,4.9,8.2,No,0,76.8,5.4,Compliant,0
+CC-0530,2024-07-20,South India,WH-BLR-01,IPA_330ml,Brewery,4,4.6,2.9,5.4,No,0,75.9,10.8,Compliant,0
+CC-0531,2024-11-08,North India,WH-BLR-01,IPA_330ml,Distributor,8,10.0,8.9,11.9,No,0,81.4,15.4,Compliant,0
+CC-0532,2024-11-25,East India,WH-BLR-01,Light_Beer_330ml,Distributor,6,3.1,2.0,5.8,Yes,49,74.0,15.3,Quarantined,9482
+CC-0533,2024-02-23,North India,WH-BLR-01,Wheat_330ml,Retail Outlet,4,8.1,5.9,10.5,Yes,30,64.6,14.9,Compliant,3550
+CC-0534,2024-10-02,North India,WH-DEL-01,Wheat_330ml,Regional Hub,8,10.8,8.4,12.2,Yes,69,67.4,12.6,Disposed,12287
+CC-0535,2024-05-05,North India,WH-DEL-01,Light_Beer_330ml,Brewery,4,7.9,5.8,8.9,Yes,44,65.5,15.0,Disposed,7861
+CC-0536,2024-12-10,North India,WH-MUM-01,Premium_Lager_330ml,Brewery,2,2.9,1.5,5.1,No,0,57.2,10.3,Compliant,0
+CC-0537,2024-07-30,Central India,WH-BLR-01,Strong_Beer_500ml,Retail Outlet,4,5.2,3.0,7.3,No,0,57.7,17.0,Compliant,0
+CC-0538,2024-10-30,North India,WH-HYD-01,Premium_Lager_330ml,Distributor,8,8.5,6.5,11.7,No,0,69.9,2.1,Compliant,0
+CC-0539,2024-08-16,Central India,WH-DEL-01,Stout_650ml,Primary Warehouse,4,6.3,4.8,9.3,Yes,77,84.4,11.9,Quarantined,5647
+CC-0540,2024-12-07,East India,WH-HYD-01,Stout_650ml,Distributor,2,1.7,0.9,3.7,No,0,73.5,6.8,Compliant,0
+CC-0541,2024-01-23,Central India,WH-KOL-01,Light_Beer_330ml,Primary Warehouse,2,0.8,-0.9,2.9,Yes,53,68.9,16.0,Compliant,3494
+CC-0542,2024-06-05,East India,WH-KOL-01,Lager_500ml,Regional Hub,4,2.8,0.9,5.1,Yes,75,74.7,9.4,Quarantined,13398
+CC-0543,2024-08-03,Central India,WH-DEL-01,Stout_650ml,Brewery,2,4.1,3.1,4.8,No,0,58.8,3.8,Compliant,0
+CC-0544,2024-01-14,West India,WH-MUM-01,Lager_500ml,Primary Warehouse,4,4.8,3.2,7.5,No,0,66.7,16.6,Compliant,0
+CC-0545,2024-07-27,Central India,WH-BLR-01,Strong_Beer_500ml,Primary Warehouse,2,0.9,0.1,2.8,No,0,64.2,4.3,Compliant,0
+CC-0546,2024-03-19,North India,WH-HYD-01,IPA_330ml,Regional Hub,2,5.4,4.2,6.5,Yes,163,57.8,13.2,Compliant,32199
+CC-0547,2024-12-11,South India,WH-BLR-01,Premium_Lager_330ml,Primary Warehouse,2,0.8,-0.0,3.8,No,0,73.4,14.0,Compliant,0
+CC-0548,2024-03-19,East India,WH-BLR-01,Stout_650ml,Distributor,6,6.3,4.7,7.2,No,0,76.2,2.3,Compliant,0
+CC-0549,2024-02-07,South India,WH-BLR-01,Stout_650ml,Retail Outlet,2,3.5,2.7,4.4,No,0,72.7,2.0,Compliant,0
+CC-0550,2024-09-04,Central India,WH-BLR-01,Light_Beer_330ml,Primary Warehouse,8,7.5,5.7,9.2,Yes,41,74.7,4.7,Quarantined,7177
+CC-0551,2024-12-13,South India,WH-HYD-01,Light_Beer_330ml,Primary Warehouse,2,3.5,2.5,5.1,No,0,55.1,8.9,Compliant,0
+CC-0552,2024-05-26,East India,WH-HYD-01,IPA_330ml,Regional Hub,4,3.2,1.3,4.0,Yes,54,82.4,2.2,Compliant,9509
+CC-0553,2024-10-28,North India,WH-HYD-01,Light_Beer_330ml,Retail Outlet,6,6.6,4.3,8.3,No,0,74.9,13.9,Compliant,0
+CC-0554,2024-01-09,East India,WH-DEL-01,Premium_Lager_330ml,Retail Outlet,8,7.0,5.6,8.3,Yes,113,62.3,8.0,Compliant,16611
+CC-0555,2024-03-15,South India,WH-DEL-01,IPA_330ml,Primary Warehouse,8,8.0,7.3,11.0,No,0,77.1,11.6,Compliant,0
+CC-0556,2024-08-01,West India,WH-HYD-01,Lager_500ml,Retail Outlet,4,2.9,0.7,4.6,Yes,146,56.5,5.6,Quarantined,9592
+CC-0557,2024-01-17,North India,WH-BLR-01,Strong_Beer_500ml,Regional Hub,2,1.8,-0.6,2.4,Yes,138,56.7,2.9,Disposed,27506
+CC-0558,2024-03-08,Central India,WH-DEL-01,Stout_650ml,Retail Outlet,6,8.1,5.6,9.4,No,0,80.1,17.7,Compliant,0
+CC-0559,2024-03-31,North India,WH-KOL-01,Wheat_330ml,Primary Warehouse,6,4.0,2.4,6.4,Yes,118,68.1,15.2,Compliant,8722
+CC-0560,2024-05-18,North India,WH-BLR-01,Light_Beer_330ml,Brewery,2,0.0,-1.0,0.8,Yes,102,57.1,1.5,Compliant,6614
+CC-0561,2024-01-29,West India,WH-KOL-01,Lager_500ml,Brewery,2,-1.1,-2.8,0.9,Yes,15,84.4,2.3,Quarantined,2153
+CC-0562,2024-11-02,South India,WH-MUM-01,Wheat_330ml,Brewery,8,5.5,4.4,8.8,Yes,170,67.8,8.3,Compliant,11968
+CC-0563,2024-09-30,Central India,WH-KOL-01,Light_Beer_330ml,Distributor,4,1.8,0.7,2.5,Yes,44,69.4,1.4,Disposed,3046
+CC-0564,2024-11-17,West India,WH-DEL-01,Premium_Lager_330ml,Distributor,4,5.2,3.7,7.0,No,0,55.2,5.4,Compliant,0
+CC-0565,2024-01-14,South India,WH-BLR-01,Light_Beer_330ml,Primary Warehouse,4,7.5,5.2,9.2,Yes,21,55.9,11.6,Compliant,3715
+CC-0566,2024-03-10,South India,WH-HYD-01,Premium_Lager_330ml,Primary Warehouse,6,6.8,4.5,8.2,No,0,55.8,5.3,Compliant,0
+CC-0567,2024-03-04,Central India,WH-BLR-01,IPA_330ml,Primary Warehouse,8,7.5,6.8,9.8,No,0,76.9,11.4,Compliant,0
+CC-0568,2024-03-26,West India,WH-KOL-01,IPA_330ml,Brewery,2,3.7,1.6,6.5,Yes,39,66.9,5.5,Disposed,5847
+CC-0569,2024-06-17,North India,WH-KOL-01,Stout_650ml,Regional Hub,2,-0.6,-2.1,2.9,Yes,66,82.0,7.2,Quarantined,4064
+CC-0570,2024-03-11,South India,WH-MUM-01,Strong_Beer_500ml,Primary Warehouse,4,1.4,-0.6,3.3,Yes,34,84.0,17.5,Quarantined,3005
+CC-0571,2024-10-15,North India,WH-HYD-01,Light_Beer_330ml,Regional Hub,2,1.1,-1.1,3.2,Yes,95,56.8,5.1,Disposed,9513
+CC-0572,2024-09-14,Central India,WH-MUM-01,Lager_500ml,Distributor,6,5.4,4.0,6.3,No,0,62.6,5.9,Compliant,0
+CC-0573,2024-12-15,Central India,WH-MUM-01,Light_Beer_330ml,Distributor,6,5.3,4.4,8.2,No,0,60.0,3.9,Compliant,0
+CC-0574,2024-07-01,West India,WH-KOL-01,Strong_Beer_500ml,Regional Hub,4,5.3,4.0,6.4,No,0,55.8,13.7,Compliant,0
+CC-0575,2024-11-30,South India,WH-BLR-01,Stout_650ml,Brewery,2,1.8,0.7,2.8,No,0,82.9,17.1,Compliant,0
+CC-0576,2024-02-19,Central India,WH-DEL-01,Lager_500ml,Brewery,8,9.2,7.0,10.5,No,0,56.5,17.9,Compliant,0
+CC-0577,2024-10-22,South India,WH-BLR-01,Premium_Lager_330ml,Primary Warehouse,6,6.8,5.0,8.7,No,0,61.2,7.0,Compliant,0
+CC-0578,2024-10-08,South India,WH-DEL-01,Strong_Beer_500ml,Regional Hub,4,2.7,1.0,3.8,Yes,60,75.0,1.9,Compliant,7122
+CC-0579,2024-01-08,East India,WH-DEL-01,IPA_330ml,Regional Hub,4,5.3,3.2,8.3,Yes,167,83.0,2.4,Compliant,19058
+CC-0580,2024-01-18,East India,WH-MUM-01,Lager_500ml,Regional Hub,6,4.4,2.4,6.8,Yes,70,58.5,10.9,Quarantined,12593
+CC-0581,2024-02-11,Central India,WH-DEL-01,Premium_Lager_330ml,Regional Hub,8,8.8,8.3,10.4,No,0,72.5,14.8,Compliant,0
+CC-0582,2024-12-05,South India,WH-BLR-01,Light_Beer_330ml,Primary Warehouse,2,2.3,0.8,3.2,No,0,67.9,14.9,Compliant,0
+CC-0583,2024-08-05,South India,WH-BLR-01,Premium_Lager_330ml,Distributor,6,6.3,5.1,7.4,No,0,63.3,14.5,Compliant,0
+CC-0584,2024-08-29,South India,WH-BLR-01,Stout_650ml,Primary Warehouse,6,9.5,7.1,11.7,Yes,78,84.2,7.2,Disposed,15329
+CC-0585,2024-08-28,North India,WH-HYD-01,Premium_Lager_330ml,Distributor,4,6.1,4.1,9.0,Yes,85,83.0,12.0,Disposed,10499
+CC-0586,2024-04-15,East India,WH-BLR-01,Light_Beer_330ml,Retail Outlet,6,6.6,5.7,7.9,No,0,77.7,14.7,Compliant,0
+CC-0587,2024-03-08,Central India,WH-MUM-01,Wheat_330ml,Brewery,4,3.0,2.2,4.0,No,0,60.2,4.3,Compliant,0
+CC-0588,2024-11-08,East India,WH-HYD-01,Lager_500ml,Brewery,2,0.5,-1.4,2.7,Yes,72,63.0,6.4,Compliant,8433
+CC-0589,2024-06-03,East India,WH-HYD-01,Light_Beer_330ml,Regional Hub,8,9.4,8.2,11.0,No,0,83.2,12.7,Compliant,0
+CC-0590,2024-01-16,East India,WH-BLR-01,Wheat_330ml,Distributor,2,3.2,1.1,5.2,No,0,64.5,17.5,Compliant,0
+CC-0591,2024-09-06,North India,WH-HYD-01,Premium_Lager_330ml,Brewery,2,4.3,2.3,5.6,No,0,84.2,12.3,Compliant,0
+CC-0592,2024-10-13,North India,WH-KOL-01,Strong_Beer_500ml,Regional Hub,4,4.9,3.0,8.1,Yes,170,55.5,7.5,Disposed,25764
+CC-0593,2024-10-12,East India,WH-HYD-01,Lager_500ml,Distributor,4,6.0,4.1,7.6,No,0,79.2,8.8,Compliant,0
+CC-0594,2024-06-20,North India,WH-HYD-01,Strong_Beer_500ml,Primary Warehouse,4,6.2,4.5,6.9,No,0,58.2,3.6,Compliant,0
+CC-0595,2024-09-30,North India,WH-KOL-01,Lager_500ml,Primary Warehouse,2,3.9,1.4,7.2,Yes,81,61.9,5.7,Quarantined,9543
+CC-0596,2024-07-31,West India,WH-DEL-01,Premium_Lager_330ml,Primary Warehouse,2,4.4,2.4,7.8,Yes,96,72.3,1.6,Disposed,8813
+CC-0597,2024-07-10,South India,WH-DEL-01,Lager_500ml,Brewery,2,2.6,1.9,4.1,No,0,74.3,4.7,Compliant,0
+CC-0598,2024-10-04,Central India,WH-KOL-01,Premium_Lager_330ml,Distributor,6,4.4,3.8,6.9,Yes,120,56.5,17.8,Quarantined,15645
+CC-0599,2024-12-28,Central India,WH-HYD-01,IPA_330ml,Distributor,8,9.0,8.3,10.3,No,0,74.5,3.5,Compliant,0
+CC-0600,2024-05-31,South India,WH-DEL-01,Lager_500ml,Retail Outlet,2,0.1,-0.5,0.9,Yes,43,67.5,5.6,Disposed,6024

@@ -1,0 +1,25 @@
+Risk_ID,Category,Risk_Description,Likelihood_1to5,Impact_1to5,Risk_Score,Risk_Level,Mitigation_Strategy,Risk_Owner,Status
+RSK-001,Demand Risk,"Sudden demand spike due to unplanned event (cricket final, festival)",4,5,20,Critical,Maintain 15% buffer stock for top SKUs during high-risk periods,Sales Director,Mitigated
+RSK-002,Demand Risk,Demand forecast error exceeding 20% for slow-moving SKUs,3,3,9,High,Switch to weekly rolling forecast; review MAPE monthly,Logistics Head,Open
+RSK-003,Demand Risk,Monsoon season demand trough deeper than expected,3,2,6,Medium,Pre-negotiate flexible order quantities with distributors,Logistics Head,Open
+RSK-004,Supplier Risk,Key malt supplier disruption due to crop failure or logistics issue,2,5,10,High,Dual-source malt from at least 2 approved suppliers,Supply Chain Manager,Open
+RSK-005,Supplier Risk,"Packaging material shortage (cans, bottles) from single vendor",2,4,8,Medium,Maintain 30-day packaging buffer; qualify alternate vendor,Procurement Lead,Mitigated
+RSK-006,Supplier Risk,Supplier quality failure causing batch rejection,2,4,8,Medium,100% incoming quality check; supplier scorecard monitoring,Sales Director,Mitigated
+RSK-007,Logistics Risk,Fuel price spike increasing freight cost by 15%+,4,3,12,High,Hedge freight contracts quarterly; shift volume to rail,Supply Chain Manager,Monitoring
+RSK-008,Logistics Risk,Major road/highway blockage disrupting North-South corridor,2,4,8,Medium,Pre-identify alternate routes; maintain regional safety stock,Finance Controller,Open
+RSK-009,Logistics Risk,Fleet breakdown during peak season (Oct-Dec),3,5,15,Critical,Preventive maintenance schedule; tie-up with backup fleet vendors,Logistics Head,Monitoring
+RSK-010,Logistics Risk,Driver shortage during festive season,3,3,9,High,Retain drivers with festive bonus; 3PL backup agreements,Logistics Head,Open
+RSK-011,Logistics Risk,Cold chain temperature breach during summer months,4,4,16,Critical,Real-time IoT temperature monitoring; SLA with cold chain vendors,Procurement Lead,Open
+RSK-012,Logistics Risk,Port/rail strike disrupting inter-city movement,2,5,10,High,Emergency road freight plan; 15-day buffer stock at key hubs,Sales Director,Open
+RSK-013,Inventory Risk,Stockout of premium SKU during Diwali/New Year,3,5,15,Critical,EOQ-based pre-season build with safety stock buffer,Warehouse Manager,Monitoring
+RSK-014,Inventory Risk,Expiry/quality degradation of slow-moving SKU in warehouse,2,3,6,Medium,FEFO (First Expiry First Out) picking policy; monthly SKU audit,Sales Director,Monitoring
+RSK-015,Inventory Risk,Overstocking due to over-forecast causing high holding cost,3,3,9,High,Cap safety stock at 30 days; trigger liquidation at 45 days,Logistics Head,Open
+RSK-016,Distributor Risk,Top distributor (Grade A) losing license or exiting market,1,5,5,Medium,Identify and develop 2nd-tier distributors in each zone,Finance Controller,Open
+RSK-017,Distributor Risk,Distributor financial distress causing order default,2,4,8,Medium,Monthly credit monitoring; cap credit limit at 30-day value,Procurement Lead,Open
+RSK-018,Distributor Risk,Distributor selling competitor products over company products,3,3,9,High,Exclusive zone agreements; volume-linked incentive scheme,Supply Chain Manager,Open
+RSK-019,Regulatory Risk,State government changing alcohol distribution regulations,2,5,10,High,Legal monitoring team; compliance buffer in business plan,Procurement Lead,Mitigated
+RSK-020,Regulatory Risk,GST rate change on beverages affecting margins,2,3,6,Medium,Build 5% margin buffer; pass-through clause in distributor contracts,Procurement Lead,Open
+RSK-021,External Risk,Natural disaster (flood/cyclone) disrupting East/South India hub,2,5,10,High,Geo-distributed hub strategy; disaster recovery plan,Sales Director,Monitoring
+RSK-022,External Risk,Counterfeit product flooding market in a region,2,4,8,Medium,Track-and-trace barcoding; rapid market audit protocol,Procurement Lead,Open
+RSK-023,Technology Risk,WMS (Warehouse Mgmt System) downtime during peak dispatch,2,4,8,Medium,Manual backup SOP; daily data backup; vendor SLA < 2 hr response,Warehouse Manager,Monitoring
+RSK-024,Technology Risk,GPS tracker failure on cold chain vehicles,3,3,9,High,Dual-device installation; driver check-in protocol every 2 hours,Finance Controller,Mitigated
