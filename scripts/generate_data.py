@@ -83,15 +83,27 @@ def generate_orders():
         revenue  = round(qty * unit_p, 2)
         cogs     = round(qty * cogs_u, 2)
         margin   = round((revenue - cogs) / revenue * 100, 2)
-        lt       = lead_time(mode, region)
-        ship_dt  = order_dt + timedelta(days=random.randint(1, 3))
-        delivery_dt = ship_dt + timedelta(days=lt)
-        promised_dt = ship_dt + timedelta(days=max(2, lt - 1))
-        otif     = 'Yes' if delivery_dt <= promised_dt else 'No'
-        status   = random.choices(
-            STATUS_OPTS,
-            weights=[65, 20, 8, 4, 3]
-        )[0]
+        # Standard SLA Promised Delivery window: base transit + regional distance + 2-day order-to-dispatch buffer
+        base_sla = {'Air Freight': 1, 'Road (Mini-Truck)': 2, 'Road (Truck)': 3, 'Rail Freight': 5}[mode]
+        region_sla = {'North India': 0, 'West India': 0, 'South India': 1, 'Central India': 1, 'East India': 2}[region]
+        promised_days = base_sla + region_sla + 2
+        promised_dt   = order_dt + timedelta(days=promised_days)
+
+        # Actual dispatch & transit
+        dispatch_delay = random.choices([1, 2, 3], weights=[80, 15, 5])[0]
+        ship_dt        = order_dt + timedelta(days=dispatch_delay)
+        lt             = base_sla + region_sla + random.choices([-1, 0, 1, 2], weights=[20, 55, 20, 5])[0]
+        delivery_dt    = ship_dt + timedelta(days=lt)
+
+        # On-Time In-Full (OTIF) Calculation:
+        # On-Time: delivery <= promised SLA date (~86% on-time)
+        # In-Full: full order fulfilled without stockout cut (~95% fill rate)
+        # OTIF = On-Time AND In-Full (~82% overall baseline vs 90%+ benchmark)
+        on_time = delivery_dt <= promised_dt
+        in_full = random.random() < 0.95
+        otif    = 'Yes' if (on_time and in_full) else 'No'
+
+        status = 'Delivered On Time' if on_time else ('Delivered Late' if random.random() < 0.85 else 'In Transit')
         freight_cost = round(qty * random.uniform(0.8, 2.5), 2)
         supplier = random.choice(SUPPLIERS)
 

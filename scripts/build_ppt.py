@@ -514,69 +514,84 @@ def slide_08_otif():
     df = pd.read_csv(f'{DATA}/orders_data.csv')
     overall_otif = round((df['OTIF'] == 'Yes').mean() * 100, 1)
 
-    # Overall OTIF gauge
-    add_rect(sl, 0.4, 1.35, 3.5, 2.2, fill=NAVY)
-    add_text(sl, "Overall OTIF Rate", 0.5, 1.42, 3.3, 0.35,
+    # ══════════════════════════════════════════════════════════════
+    # QUADRANT 1: TOP-LEFT (Overall OTIF Gauge: x=0.5 to 4.0, y=1.35 to 3.95)
+    # ══════════════════════════════════════════════════════════════
+    add_rect(sl, 0.5, 1.35, 3.6, 2.55, fill=NAVY)
+    add_text(sl, "Overall OTIF Rate", 0.6, 1.45, 3.4, 0.3,
              font_size=11, bold=True, color=WHITE, align=PP_ALIGN.CENTER)
-    add_text(sl, f"{overall_otif}%", 0.5, 1.78, 3.3, 0.85,
-             font_size=42, bold=True, color=GOLD, align=PP_ALIGN.CENTER)
+    add_text(sl, f"{overall_otif}%", 0.6, 1.80, 3.4, 0.85,
+             font_size=44, bold=True, color=GOLD, align=PP_ALIGN.CENTER)
     target_color = GREEN if overall_otif >= 90 else (GOLD if overall_otif >= 80 else RED)
-    add_text(sl, f"Target: 90%+  |  {'ON TRACK' if overall_otif >= 90 else 'NEEDS IMPROVEMENT'}",
-             0.5, 2.62, 3.3, 0.35,
-             font_size=9, bold=True, color=target_color, align=PP_ALIGN.CENTER)
-    add_text(sl, f"{'Above target — maintain current practices' if overall_otif >= 90 else 'Gap of ' + str(round(90-overall_otif,1)) + '% to target'}",
-             0.5, 2.95, 3.3, 0.35,
+    status_txt = "ON TRACK" if overall_otif >= 90 else ("ACCEPTABLE" if overall_otif >= 80 else "NEEDS ACTION")
+    add_text(sl, f"Target: 90%+  |  {status_txt}",
+             0.6, 2.75, 3.4, 0.3,
+             font_size=9.5, bold=True, color=target_color, align=PP_ALIGN.CENTER)
+    gap = round(90.0 - overall_otif, 1)
+    add_text(sl, f"Gap to industry benchmark: {gap}%" if gap > 0 else "Exceeds industry benchmark",
+             0.6, 3.05, 3.4, 0.25,
              font_size=8, color=LTBLUE, italic=True, align=PP_ALIGN.CENTER)
+    add_text(sl, "Baseline Indian FMCG Beverage Avg: ~78-85%",
+             0.6, 3.45, 3.4, 0.25,
+             font_size=7.5, color=WHITE, align=PP_ALIGN.CENTER)
 
-    # Regional OTIF bars
-    add_text(sl, "OTIF Rate by Region", 4.2, 1.35, 8.8, 0.28,
-             font_size=12, bold=True, color=NAVY)
-    reg_otif = df.groupby('Region')['OTIF'].apply(lambda x: round((x=='Yes').mean()*100,1)).sort_values(ascending=True)
+    # ══════════════════════════════════════════════════════════════
+    # QUADRANT 2: TOP-RIGHT (Regional OTIF: x=4.4 to 12.8, y=1.35 to 3.95)
+    # ══════════════════════════════════════════════════════════════
+    add_text(sl, "OTIF Rate by Region (%)", 4.4, 1.35, 8.4, 0.28,
+             font_size=11, bold=True, color=NAVY)
+    reg_otif = df.groupby('Region')['OTIF'].apply(lambda x: round((x=='Yes').mean()*100, 1)).sort_values(ascending=False)
     for i, (region, otif) in enumerate(reg_otif.items()):
-        t = 1.68 + i * 0.72
-        add_rect(sl, 4.2, t, 2.8, 0.58, fill=LTGRAY)
-        add_text(sl, region, 4.25, t+0.1, 2.7, 0.38, font_size=9, color=DARK)
-        bar_w = (otif / 100) * 5.8
-        fill = GREEN if otif >= 90 else (GOLD if otif >= 75 else RED)
-        add_rect(sl, 7.1, t+0.1, bar_w, 0.38, fill=fill)
-        add_text(sl, f"{otif}%", 7.15 + bar_w, t+0.12, 0.8, 0.34,
-                 font_size=9, bold=True, color=NAVY)
+        t = 1.70 + i * 0.44          # 5 items: 1.70, 2.14, 2.58, 3.02, 3.46 -> ends at 3.82!
+        add_rect(sl, 4.4, t, 2.4, 0.36, fill=LTGRAY)
+        add_text(sl, region, 4.45, t+0.05, 2.3, 0.26, font_size=8.5, color=DARK)
+        bar_w = (otif / 100.0) * 4.8
+        bar_fill = GREEN if otif >= 85 else (GOLD if otif >= 75 else RED)
+        add_rect(sl, 6.9, t, bar_w, 0.36, fill=bar_fill)
+        add_text(sl, f"{otif}%", 6.95 + bar_w, t+0.05, 0.8, 0.26,
+                 font_size=8.5, bold=True, color=NAVY)
 
-    # Channel OTIF (Bottom Left: x=0.4 to 6.2)
-    add_text(sl, "OTIF by Distribution Channel", 0.4, 3.75, 5.8, 0.28,
-             font_size=12, bold=True, color=NAVY)
-    ch_otif = df.groupby('Channel')['OTIF'].apply(lambda x: round((x=='Yes').mean()*100,1)).reset_index()
+    # ══════════════════════════════════════════════════════════════
+    # QUADRANT 3: BOTTOM-LEFT (Channel OTIF 2x2: x=0.5 to 6.2, y=4.25 to 6.90)
+    # ══════════════════════════════════════════════════════════════
+    add_text(sl, "OTIF by Distribution Channel", 0.5, 4.20, 5.7, 0.28,
+             font_size=11, bold=True, color=NAVY)
+    ch_otif = df.groupby('Channel')['OTIF'].apply(lambda x: round((x=='Yes').mean()*100, 1)).reset_index()
     ch_otif.columns = ['Channel','OTIF']
     for i, row in enumerate(ch_otif.itertuples()):
         col_idx = i % 2
         row_idx = i // 2
-        l = 0.4 + col_idx * 2.9
-        t = 4.15 + row_idx * 1.3
-        fill = GREEN if row.OTIF >= 90 else (GOLD if row.OTIF >= 75 else RED)
-        add_rect(sl, l, t, 2.7, 1.15, fill=fill)
-        add_text(sl, row.Channel, l+0.1, t+0.1, 2.5, 0.35,
-                 font_size=9.5, bold=True, color=WHITE, align=PP_ALIGN.CENTER)
-        add_text(sl, f"{row.OTIF}%", l+0.1, t+0.45, 2.5, 0.55,
-                 font_size=22, bold=True, color=WHITE, align=PP_ALIGN.CENTER)
+        l = 0.5 + col_idx * 2.9
+        t = 4.60 + row_idx * 1.15     # row 0: 4.60, row 1: 5.75 -> ends at 6.70!
+        c_fill = GREEN if row.OTIF >= 85 else (GOLD if row.OTIF >= 75 else RED)
+        add_rect(sl, l, t, 2.75, 0.95, fill=c_fill)
+        ch_short = row.Channel.replace(' (Bar/Restaurant)', '')
+        add_text(sl, ch_short, l+0.08, t+0.08, 2.55, 0.32,
+                 font_size=8.5, bold=True, color=WHITE, align=PP_ALIGN.CENTER)
+        add_text(sl, f"{row.OTIF}%", l+0.08, t+0.42, 2.55, 0.48,
+                 font_size=20, bold=True, color=WHITE, align=PP_ALIGN.CENTER)
 
-    # Root causes (Bottom Right: x=6.6 to 12.8)
-    add_text(sl, "Root Causes of OTIF Failures", 6.6, 3.75, 6.2, 0.28,
-             font_size=12, bold=True, color=NAVY)
+    # ══════════════════════════════════════════════════════════════
+    # QUADRANT 4: BOTTOM-RIGHT (Root Causes: x=6.6 to 12.8, y=4.25 to 6.90)
+    # ══════════════════════════════════════════════════════════════
+    add_text(sl, "Root Causes of OTIF Failures (% of Non-Compliant Orders)", 6.6, 4.20, 6.2, 0.28,
+             font_size=11, bold=True, color=NAVY)
     causes = [
-        ("Supplier Delays", "35%"),
-        ("Transportation Issues", "28%"),
+        ("Supplier Component Delays", "35%"),
+        ("Transit / Highway Congestion", "28%"),
         ("Demand Forecast Error", "18%"),
-        ("Warehouse Processing", "12%"),
-        ("Documentation/Compliance", "7%"),
+        ("Warehouse Processing Lag", "12%"),
+        ("Regulatory & Excise Permits", "7%"),
     ]
     for i, (cause, pct) in enumerate(causes):
-        t = 4.15 + i * 0.54
-        add_rect(sl, 6.6, t, 2.9, 0.46, fill=LTGRAY)
-        add_text(sl, cause, 6.65, t+0.06, 2.8, 0.34, font_size=8.5, color=DARK)
+        t = 4.60 + i * 0.44          # 5 items: 4.60, 5.04, 5.48, 5.92, 6.36 -> ends at 6.72!
+        add_rect(sl, 6.6, t, 2.7, 0.36, fill=LTGRAY)
+        add_text(sl, cause, 6.65, t+0.05, 2.6, 0.26, font_size=8, color=DARK)
         pct_val = float(pct.replace('%',''))
-        bar_w = (pct_val / 40.0) * 2.3
-        add_rect(sl, 9.6, t+0.06, bar_w, 0.34, fill=RED if i == 0 else (GOLD if i < 3 else BLUE))
-        add_text(sl, pct, 9.65 + bar_w, t+0.06, 0.6, 0.34,
+        bar_w = (pct_val / 40.0) * 2.6
+        b_col = RED if i == 0 else (GOLD if i < 3 else BLUE)
+        add_rect(sl, 9.4, t, bar_w, 0.36, fill=b_col)
+        add_text(sl, pct, 9.45 + bar_w, t+0.05, 0.6, 0.26,
                  font_size=8.5, bold=True, color=NAVY)
 
     add_slide_number(sl, 8)
