@@ -1,0 +1,6 @@
+# Private study / revision guides (keep local, never push to GitHub)
+docs/
+*.pdf
+scripts/generate_course_pdf.py
+__pycache__/
+*.pyc
