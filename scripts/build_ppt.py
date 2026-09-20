@@ -436,9 +436,10 @@ def slide_07_logistics():
 
     df = pd.read_csv(f'{DATA}/orders_data.csv')
 
-    # Shipment mode table
-    add_text(sl, "Performance by Shipment Mode", 0.4, 1.35, 6.2, 0.28,
-             font_size=12, bold=True, color=NAVY)
+    # ── LEFT: Shipment mode table (cols 0.4 to 6.5, rows 1.35 to 4.2) ──
+    add_text(sl, "Performance by Shipment Mode", 0.4, 1.35, 6.0, 0.28,
+             font_size=11, bold=True, color=NAVY)
+
     mode_data = df.groupby('Shipment_Mode').agg(
         Orders=('Order_ID','count'),
         Avg_LT=('Lead_Time_Days','mean'),
@@ -446,52 +447,58 @@ def slide_07_logistics():
         Freight=('Freight_Cost_INR','mean')
     ).reset_index().sort_values('Avg_LT')
 
-    hdrs = ['Mode', 'Orders', 'Avg LT', 'OTIF%', 'Avg Freight']
-    col_widths = [2.6, 0.8, 0.7, 0.7, 1.3]
+    hdrs      = ['Mode', 'Orders', 'Avg LT', 'OTIF%', 'Avg Freight (INR)']
+    col_widths = [2.5, 0.75, 0.7, 0.7, 1.55]   # total = 6.2
     x = 0.4
     for h, w in zip(hdrs, col_widths):
         add_rect(sl, x, 1.68, w, 0.3, fill=NAVY)
         add_text(sl, h, x+0.04, 1.70, w-0.08, 0.26,
-                 font_size=8.5, bold=True, color=WHITE, align=PP_ALIGN.CENTER)
+                 font_size=8, bold=True, color=WHITE, align=PP_ALIGN.CENTER)
         x += w
 
     for i, row in enumerate(mode_data.itertuples()):
-        t = 2.0 + i * 0.52
+        t = 2.02 + i * 0.50          # 4 rows → ends at 2.02 + 3*0.50 + 0.50 = 4.02
         bg = LTBLUE if i % 2 == 0 else LTGRAY
         vals = [row.Shipment_Mode, row.Orders, f"{row.Avg_LT:.1f}d",
                 f"{row.OTIF}%", f"INR {row.Freight:.0f}"]
         x = 0.4
         for v, w in zip(vals, col_widths):
-            add_rect(sl, x, t, w, 0.47, fill=bg)
-            add_text(sl, str(v), x+0.04, t+0.06, w-0.08, 0.35,
+            add_rect(sl, x, t, w, 0.45, fill=bg)
+            add_text(sl, str(v), x+0.04, t+0.05, w-0.08, 0.35,
                      font_size=8.5, color=DARK, align=PP_ALIGN.CENTER)
             x += w
 
-    # Regional lead time
-    add_text(sl, "Average Lead Time by Region", 6.9, 1.35, 6.0, 0.28,
-             font_size=12, bold=True, color=NAVY)
-    reg_lt = df.groupby('Region')['Lead_Time_Days'].mean().sort_values(ascending=False)
-    max_lt = reg_lt.max()
+    # ── RIGHT: Regional lead time bar chart (cols 6.8 to 13.0) ──
+    add_text(sl, "Avg Lead Time by Region (Days)", 6.8, 1.35, 6.3, 0.28,
+             font_size=11, bold=True, color=NAVY)
+    reg_lt  = df.groupby('Region')['Lead_Time_Days'].mean().sort_values(ascending=False)
+    max_lt  = reg_lt.max()
+    MAX_BAR = 4.2          # max bar width in inches — keeps label within slide
+
     for i, (region, lt) in enumerate(reg_lt.items()):
-        t = 1.68 + i * 0.72
-        add_rect(sl, 6.9, t, 4.0, 0.58, fill=LTGRAY)
-        add_text(sl, region, 6.95, t+0.1, 2.2, 0.38, font_size=9, color=DARK)
-        bar_w = (lt / max_lt) * 3.5
-        add_rect(sl, 9.1, t+0.1, bar_w, 0.38, fill=RED if lt > 5 else (GOLD if lt > 3.5 else GREEN))
-        add_text(sl, f"{lt:.1f}d", 9.15 + bar_w, t+0.12, 0.8, 0.34,
+        t = 1.68 + i * 0.72          # 5 rows → ends at 1.68 + 4*0.72 + 0.58 = 5.14
+        add_rect(sl, 6.8, t, 2.6, 0.58, fill=LTGRAY)
+        add_text(sl, region, 6.85, t+0.1, 2.5, 0.38, font_size=9, color=DARK)
+        bar_w = (lt / max_lt) * MAX_BAR
+        bar_color = RED if lt > 5 else (GOLD if lt > 3.5 else GREEN)
+        add_rect(sl, 9.5, t+0.1, bar_w, 0.38, fill=bar_color)
+        # label placed right of bar but capped so it never exceeds 13.1"
+        label_x = min(9.55 + bar_w, 12.7)
+        add_text(sl, f"{lt:.1f}d", label_x, t+0.12, 0.55, 0.34,
                  font_size=9, bold=True, color=NAVY)
 
-    # Key insights
-    add_text(sl, "Key Logistics Insights", 0.4, 4.4, 12.5, 0.28,
-             font_size=12, bold=True, color=NAVY)
-    bullet_box(sl, 0.4, 4.72, 12.5, 2.1, [
-        "Air Freight has 1-day lead time but costs 3x more than Road — recommended only for urgent/high-value orders",
-        "East India consistently shows highest lead times (5–7 days) — hub consolidation recommended in Kolkata",
-        "Road (Truck) handles 55% of shipments — optimizing truck routing could cut freight cost by 12–18%",
-        "Rail Freight underutilized at 15% — expanding rail for bulk lager SKUs could save INR 15–20L annually",
+    # ── BOTTOM: Key insights (y=5.2 to 7.2 — safe below all content) ──
+    add_text(sl, "Key Logistics Insights", 0.4, 5.2, 12.7, 0.28,
+             font_size=11, bold=True, color=NAVY)
+    bullet_box(sl, 0.4, 5.52, 12.7, 1.75, [
+        "Air Freight has 1-day lead time but costs 3x more than Road — use only for urgent/high-value orders",
+        "East India has highest avg lead time (5–7 days) — Kolkata hub consolidation recommended",
+        "Road (Truck) handles 55% of shipments — route optimization could cut freight cost by 12–18%",
+        "Rail Freight underutilized at 15% — expanding to bulk Lager SKUs could save INR 15–20L/yr",
     ], font_size=9.5)
 
     add_slide_number(sl, 7)
+
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -535,22 +542,25 @@ def slide_08_otif():
         add_text(sl, f"{otif}%", 7.15 + bar_w, t+0.12, 0.8, 0.34,
                  font_size=9, bold=True, color=NAVY)
 
-    # Channel OTIF
-    add_text(sl, "OTIF by Channel", 0.4, 3.75, 6.0, 0.28,
+    # Channel OTIF (Bottom Left: x=0.4 to 6.2)
+    add_text(sl, "OTIF by Distribution Channel", 0.4, 3.75, 5.8, 0.28,
              font_size=12, bold=True, color=NAVY)
     ch_otif = df.groupby('Channel')['OTIF'].apply(lambda x: round((x=='Yes').mean()*100,1)).reset_index()
     ch_otif.columns = ['Channel','OTIF']
     for i, row in enumerate(ch_otif.itertuples()):
-        l = 0.4 + i * 3.1
+        col_idx = i % 2
+        row_idx = i // 2
+        l = 0.4 + col_idx * 2.9
+        t = 4.15 + row_idx * 1.3
         fill = GREEN if row.OTIF >= 90 else (GOLD if row.OTIF >= 75 else RED)
-        add_rect(sl, l, 4.08, 2.9, 1.0, fill=fill)
-        add_text(sl, row.Channel, l+0.1, 4.12, 2.7, 0.38,
-                 font_size=9, bold=True, color=WHITE, align=PP_ALIGN.CENTER)
-        add_text(sl, f"{row.OTIF}%", l+0.1, 4.48, 2.7, 0.48,
-                 font_size=20, bold=True, color=WHITE, align=PP_ALIGN.CENTER)
+        add_rect(sl, l, t, 2.7, 1.15, fill=fill)
+        add_text(sl, row.Channel, l+0.1, t+0.1, 2.5, 0.35,
+                 font_size=9.5, bold=True, color=WHITE, align=PP_ALIGN.CENTER)
+        add_text(sl, f"{row.OTIF}%", l+0.1, t+0.45, 2.5, 0.55,
+                 font_size=22, bold=True, color=WHITE, align=PP_ALIGN.CENTER)
 
-    # Root causes
-    add_text(sl, "Root Causes of OTIF Failures", 6.6, 3.75, 6.5, 0.28,
+    # Root causes (Bottom Right: x=6.6 to 12.8)
+    add_text(sl, "Root Causes of OTIF Failures", 6.6, 3.75, 6.2, 0.28,
              font_size=12, bold=True, color=NAVY)
     causes = [
         ("Supplier Delays", "35%"),
@@ -560,13 +570,14 @@ def slide_08_otif():
         ("Documentation/Compliance", "7%"),
     ]
     for i, (cause, pct) in enumerate(causes):
-        t = 4.08 + i * 0.58
-        add_rect(sl, 6.6, t, 4.0, 0.48, fill=LTGRAY)
-        add_text(sl, cause, 6.65, t+0.08, 3.0, 0.32, font_size=9, color=DARK)
-        bar_w = float(pct.replace('%','')) / 100 * 3.5
-        add_rect(sl, 9.7, t+0.08, bar_w, 0.32, fill=RED if i == 0 else (GOLD if i < 3 else BLUE))
-        add_text(sl, pct, 10.1, t+0.08, 0.7, 0.32,
-                 font_size=9, bold=True, color=NAVY)
+        t = 4.15 + i * 0.54
+        add_rect(sl, 6.6, t, 2.9, 0.46, fill=LTGRAY)
+        add_text(sl, cause, 6.65, t+0.06, 2.8, 0.34, font_size=8.5, color=DARK)
+        pct_val = float(pct.replace('%',''))
+        bar_w = (pct_val / 40.0) * 2.3
+        add_rect(sl, 9.6, t+0.06, bar_w, 0.34, fill=RED if i == 0 else (GOLD if i < 3 else BLUE))
+        add_text(sl, pct, 9.65 + bar_w, t+0.06, 0.6, 0.34,
+                 font_size=8.5, bold=True, color=NAVY)
 
     add_slide_number(sl, 8)
 
