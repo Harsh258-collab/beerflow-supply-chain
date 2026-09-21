@@ -1,4 +1,4 @@
-# 🍺 BeerFlow — Beverage Supply Chain & Logistics Analytics
+﻿# 🍺 BeerFlow — Beverage Supply Chain & Logistics Analytics
 
 > **Author:** Harsh Raj Pandey  
 > **Role Focus:** Supply Chain & Logistics Operations Analyst  
@@ -160,4 +160,4 @@ python scripts/build_pro_ppt.py
 - **Author:** Harsh Raj Pandey
 - **GitHub:** [Harsh258-collab](https://github.com/Harsh258-collab)
 - **LinkedIn:** [harsh-raj-pandey-1a0319325](https://www.linkedin.com/in/harsh-raj-pandey-1a0319325)
-- **Email:** harsh258.collab@gmail.com
+- **Email:** pandey.monti24@gmail.com
