@@ -1,4 +1,4 @@
-"""
+﻿"""
 BeerFlow — PowerPoint Deck Builder
 Author: Harsh Raj Pandey
 Builds a professional 14-slide strategy deck for beverage supply chain optimization.
@@ -916,7 +916,7 @@ def slide_14_close():
     contact_items = [
         ("GitHub:", "github.com/Harsh258-collab"),
         ("LinkedIn:", "linkedin.com/in/harsh-raj-pandey-1a0319325"),
-        ("Email:", "harsh258.collab@gmail.com"),
+        ("Email:", "pandey.monti24@gmail.com"),
     ]
     for i, (label, val) in enumerate(contact_items):
         t = 4.3 + i * 0.52

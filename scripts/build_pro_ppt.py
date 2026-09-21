@@ -1,4 +1,4 @@
-"""
+﻿"""
 BeerFlow Master Presentation Deck — 10+ Year Executive Experience Tier
 Author: Harsh Raj Pandey
 Palette: Bold Yellow & White & Deep Obsidian (#FFB703, #FFFFFF, #14141E)
@@ -1066,7 +1066,7 @@ def slide_14_closing():
     contact_items = [
         ("GitHub Repository", "https://github.com/Harsh258-collab/beerflow-supply-chain"),
         ("LinkedIn Profile", "https://www.linkedin.com/in/harsh-raj-pandey-1a0319325"),
-        ("Contact Email", "harsh258.collab@gmail.com"),
+        ("Contact Email", "pandey.monti24@gmail.com"),
     ]
     for ci, (clabel, cval) in enumerate(contact_items):
         cy = 4.5 + ci * 0.45

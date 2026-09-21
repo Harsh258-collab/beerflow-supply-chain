@@ -1,8 +1,11 @@
-# Private study / revision guides & keynote decks (keep local, never push to GitHub)
+﻿# Private study / revision guides & keynote decks (keep local, never push to GitHub)
 docs/
 *.pdf
 scripts/generate_course_pdf.py
 powerpoint/BeerFlow_Executive_Keynote.pptx
 scripts/build_executive_keynote.py
+scripts/build_hr_deck.py
 __pycache__/
 *.pyc
+
+powerpoint/slide_previews/
